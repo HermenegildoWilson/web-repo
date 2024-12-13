@@ -1,3 +1,4 @@
+		----------- EMMET ------------
 	O emmet é uma funcionalidade do VsCode que nos ajuda na escrita de codigos de forma mais dinâmica, de forma a auto completar os codigos, podemos usar as seguintes formas de abreviação:
 
 	-> Para criar tag "irmãs", separadas as mesmas com um sinal de +;
