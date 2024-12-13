@@ -1,0 +1,23 @@
+Links: São ligações que nos direcionam para uma pagina especificada por uma URL, e pode ser:
+
+	-> Externos: Quando estes nos direcionam para um syte diferente ou seja para outro syte.
+			tag
+	<a href="URL do syte que será aberto">Conteudo que será exibido</a>
+	Ao cria um link desta forma ao clicar no link vamos soprepor o syte aberto sobre o nosso syte, para evitar isto adicionamos os seguintes codigos a tag:
+	<a href="URL" target="$$1" rel="$$2"></a>
+		$$1- _blank: Abre o link em uma nova página
+		    _self: Abre na mesma página sobrepõe a pagina atual
+		$$2- external: Quando é um link externo
+		     next: Quando abre a proxima página de um syte
+		     prev: Quando abre a página anterior
+	
+	->Internos: Serve para fazer ligações entre sytes que estão na mesma página ou servidor.
+	Usa - se a mesma tag 'a' só diferem na URL nestes ao invez da URL colocamos o caminho para o outro syte ou ainda o nome caso estejam no mesmo repositório.		
+
+	-> Links para download: Estes links servem para fazer o download de arquivos do syte, e usa -se a tag a com doisparametros adicionais nomeadamente dounload, type:
+
+	<a herf="$$1" download="$$2" type="$$3">Texto</a>
+
+	-> $$1: Nome ou caminho do arquivo ou ainda o link(para o caso de ser um arquivo externo).
+	-> $$2: Nome do arquivo.
+	-> $$3: Formato do arquivo(Estão disponiveis no syte da ian).

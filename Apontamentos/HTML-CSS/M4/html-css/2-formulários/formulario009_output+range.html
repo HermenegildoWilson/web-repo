@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        output::after{
+            content: " %";
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.py" method="get">
+        <p>
+            <label for="nivel">Nivel de satisfação: </label>
+            <input type="range" name="nivel" id="nivel" value="50" oninput="niv.innerHTML = Number(nivel.value)">
+            <output id="niv">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

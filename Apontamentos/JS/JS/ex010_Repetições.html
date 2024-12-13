@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetições</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body onload="contar()">
+    <div id="texto"></div>
+    <script>
+        function contar(){
+            var txt = document.getElementById('texto')
+            for(var c = 1; c <= 11; c++){
+                txt.append(c+' ')
+            }
+        }
+    </script>
+</body>
+</html>

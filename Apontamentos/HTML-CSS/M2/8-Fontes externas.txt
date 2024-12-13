@@ -1,0 +1,19 @@
+	Muitas vezes precisaremos de usar fontes externas e isso em css pode ser feito de duas formas: carregando a fonte atraves de um link para um determinado syte de fontes, e usando um arquivo de fonte local em formato otf ou ttf:
+	
+	Carregando de forma local: SINTAXE:
+	@font-face {
+		font-family: Nome como chamaremos a fonte;
+		src: url('CC')format('FF');
+	}
+	Onde: 
+		->» CC: Indica o caminho para o arquivo de fonte;
+		->» FF: Indica o farmato da fonte, opentype(otf), truetype(ttf)
+
+	Nós também podemos ter a nessecidade de saber qual estilo de fonte um determinado syte esta usando para isso usamos a seguinte extenção:
+
+	->» Fonts ninja: Para pegar a fonte usada em um syte;
+	->» ColorZila: Para pegar uma determinada cor em um syte;
+	->» Web developer: Para habilitar e desabilitar as css, html e JavaScript de um determinado syte.
+	->»window resiver
+
+	Para achar uma fonte que esta em uma imagem usamos alguns sytes como: what font is, font squirrel e o my fonts.

@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px){ /*---- TABLET -----*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    
+    img#phone{display: none;}
+
+    img#tablet{display: inline-block;}
+
+    img#print{display: none;}
+
+    img#pc{display: none;}
+
+    img#tv{display: none;}
+}
+
+@media print{ /*---- IMPRESSORA -----*/
+    body{
+        background-image: url(../imagens/back-print.jpg);
+    }
+    
+    img#phone{display: none;}
+
+    img#tablet{display: none;}
+
+    img#print{display: inline-block;}
+
+    img#pc{display: none;}
+
+    img#tv{display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /*---- PC -----*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    
+    img#phone{display: none;}
+
+    img#tablet{display: none;}
+
+    img#print{display: none;}
+
+    img#pc{display: inline-block;}
+
+    img#tv{display: none;}
+}
+
+@media screen and (min-width: 1200px) { /*---- PC -----*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    
+    img#phone{display: none;}
+
+    img#tablet{display: none;}
+
+    img#print{display: none;}
+
+    img#pc{display: none;}
+
+    img#tv{display: inline-block;}
+}

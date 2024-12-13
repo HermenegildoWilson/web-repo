@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de votação</title>
+</head>
+<style>
+    div{
+        /*color: #ee3030ca;
+        color: #30ee30ca;*/
+        padding: 10px;
+        margin: 10px;
+        border: .5px solid #000000;
+        width: 300px;
+    }
+
+</style>
+<body>
+    <h1>Controle de votação</h1>
+
+    <div>
+        <label for="i_ano">Ano de nascimento</label>
+        <input type="number" name="i_ano" id="i_ano" min="1000" max="2025">
+        <input type="button" value="Analisar" onclick="ana()">
+    </div>
+    <div id="txt"></div>
+
+    <script>
+        function ana() {
+            var atual = new Date()
+
+            var anoNascimento = document.getElementById('i_ano').value
+            var anoAtual = atual.getFullYear()
+            var idade = Number(anoAtual) - Number(anoNascimento)
+            var texto = document.getElementById('txt')
+
+            if (idade >= 18){
+                texto.innerHTML = `Vote tem ${idade} anos, logo Você já pode votar`
+                texto.style.backgroundColor = '#30ee30ca'
+            }else{
+                texto.innerHTML = `Vote tem ${idade} anos, logo Você ainda não pode Votar`
+                texto.style.backgroundColor = '#ee3030ca'
+            }
+        }
+    </script>
+</body>
+</html>

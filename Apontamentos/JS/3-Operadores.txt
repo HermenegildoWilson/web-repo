@@ -1,0 +1,28 @@
+	E JS temos vários tipos de operadores mais os principais deles são:
+
+	-> Aritméticos:
+		=» +, -, *, /, %, **;
+	PrecedÊencia: (), **, [*, /, %], [+, -]
+	
+	-> De atribuição:
+		=» =, +=, -=, *=, /=, **=, %=;
+	
+	-> Incremento:
+		=» ++, --;
+
+	-> Relacionais:
+		=» >, <, >=, <=, ==, !=;
+
+		De identidade:
+			===: Verifica se dois valores são identicos, ou seja, verifica se eles têm o mesmo valor e se são do mesmo tipo;
+			!==: Tal como o anterior este também faz a verificação do tipo e do conteudo que estiver nas variaveis;
+
+	-> Lógicos:
+		!: Negação;
+		&&: Conjunçõ (e);
+		||: Dijunção(ou);
+
+	-> Ternário: teste_logico ? verdadeiro : falso
+
+
+	Ordem de precedÊncia dos operadores: Operadores aritméticos, Relacionais, Lógicos e por ultimo o ternário.

@@ -1,0 +1,3 @@
+	document.innerText: Permite acessar ao conteudo armazenado em um determinado tipo de dado.
+	document.createElement('nome_da_tag')
+	nome_da_tag.setAttribute('atributo','valor')	

@@ -1,0 +1,290 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'monserrat';
+    src: url(../fontes/Montserrat-VariableFont_wght.ttf);
+}
+
+:root{
+    --corL05: #ffa500;
+    --corL04: #cc8f0a;/*#ffb733*/
+    --corL03: #ffc966;
+    --corL02: #ffedcc;
+    --corL01: #ffedccad;
+
+    --corC01: #ccccccb0;/*#808080b0,*/
+
+    --corA01: #1d1d1dad;
+    --corA02: #1d1d1d;
+}
+
+/*CONFIGURAÕES GERAIS*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'monserrat';
+
+    list-style: none;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+button{
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    color: var(--corA01);
+    font-weight: 700;
+    font-size: 1em;
+}
+body{
+    background-color: var(--corL01);
+}
+
+/*CABEÇALHO-HEADER*/
+.cabecalho{
+    background-color: var(--corL02);
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 0px 8px 3px #0000001a;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+/*CABEÇALHO-LOGOTIPO*/
+#logo{
+    width: 70px;
+    border-radius: 50%;
+}
+
+/*CABEÇALHO-BOTÃO SHOW/KIP MENU*/
+#btn-menu{
+    padding: 4px;
+    height: 53px;
+
+    display: grid;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+}
+.linha{
+    background-color: var(--corC01);
+    width: 40px;
+    height: 3px;
+
+    border-radius: 8px;
+    transform-origin: center;
+    transition: .4s;
+}
+/*CABEÇALHO-BOTÃO SHOW/KIP MENU*/
+button.clicando :nth-child(1){
+    transform: translateY(16px) rotate(45deg);
+}
+button.clicando :nth-child(2){
+    width: 0;
+}
+button.clicando :nth-child(3){
+    transform: translateY(-16px) rotate(-45deg);
+}
+
+/*CABEÇALHO-MENU DE NAVEGAÇÃO*/
+.cabecalho > nav{
+    grid-column: span 2;
+}
+#menu{
+    flex-flow: column;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+}
+#menu a{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--corA01);
+    font-weight: 600;
+}
+.cabecalho > div{
+    justify-content: center;
+    grid-column: span 2;
+}
+#action-btn{
+    background-color: var(--corL05);
+    padding: 12px 20px;
+    width: 123px;
+}
+
+/*OCULTAR O MENU*/
+ul, .cabecalho > div{
+    display: none;
+}
+
+/*MOSTRAR O MENU QUANDO CLICADO*/
+ul.clicando, div.clicando{
+    display: flex;
+}
+
+/*CONFIGURAÇÕES DO CORPO*/
+.conteudo{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    
+    box-shadow: 0px 0px 9px 1px #0000000e;
+    border-radius: 10px;
+    width: 90vw;
+    margin: auto;
+    padding: 20px;
+}
+
+/*CONFIGURAÇÕES DAS SECÇÕES DO CORPO*/
+.seccao{
+    display: grid;
+}
+
+#inicio{
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #1d1d1d1a;
+    padding-bottom: 35px;
+}
+
+#hero{
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+
+    margin: 30px 0px;
+    color: var(--corA01);
+}
+#hero > h1{
+    font-weight: bolder;
+    color: var(--corA02);
+    font-size: 3em;
+}
+#hero > button{
+    align-self: center;
+}
+
+.title{
+    font-weight: 800;
+    font-size: 2.2em;
+    color: var(--corL04);
+    text-align: center;
+}
+.subtitle{
+    font-weight: 800;
+    font-size: 1.6em;
+    color: var(--corA01);
+    text-align: center;
+}
+.nome-prato{
+    font-weight: 700;
+    font-size: 1em;
+    color: var(--corL04);
+    text-align: center;
+    width: 100px;
+}
+.paragrafo{
+    text-align: justify;
+    margin-left: 40px;
+}
+
+
+#banner{
+    display: flex;
+}
+
+#cardapio{
+    justify-content: space-around;
+    align-items: center;
+    gap: 12px;
+    padding: 35px 0px;
+    border-bottom: 2px solid #1d1d1d1a;
+    padding: 8px;
+    padding-bottom: 30px;
+}
+
+#pratos-do-cardapio{
+    width: 350px;
+    padding: 2px;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.pratos-chef{
+    width: 350px;
+    border-left: 1px solid black;
+    animation: girar_chef 10s ease-in-out infinite alternate;
+}
+.pratos-chef > div{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.chef img{
+    width: 125px;
+}
+.pratos{
+    margin: auto;
+
+    display: flex;
+    width: 250px;
+    padding: 8px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 12px 4px #0000000e;
+
+    overflow: hidden;
+}
+.prato{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.prato img{
+    width: 125px;
+}
+
+#prato1{
+    margin-left: 0;
+}
+
+@keyframes girar_chef {
+    0%{margin-left: 0px;}
+    100%{margin-left: -700px;}
+}
+
+#depoimento{
+    justify-content: space-around;
+    align-items: center;
+    gap: 12px;
+    padding: 35px 0px;
+    border-bottom: 2px solid #1d1d1d1a;
+}
+.depoimento{
+    display: flex;
+    padding: 18px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 12px 4px #0000000e;
+}
+.depoimento > p{
+    text-align: justify;
+}
+
+footer{
+    padding-top: 30px;
+}

@@ -1,0 +1,36 @@
+	Media quires tem haver com a criação de formas diferentes para apresentar o conteudo em diferentes midias.
+
+	Estas são criadas em css, e para crialas basta criar arquivos css com funções especificas, em um mesmo proh«jecto podemos ter um arquivo css responsavel apenas por criar o estilo da tela, outro para criar um estilo para impressora, etc. 
+
+	E esta 'distribuição de responsabilidade' é criada adicionando o parametro media ao link css com o valor correspondente a responsabilidade do mesmo(screen para tela e print para impressora), 
+
+	A esta forma de criação de media chamamos de media types.
+
+	Ao trabalhar com as media types nós ficamos um pouco limitados pois existem apenas três tipos principais de media type: screen(tela), print(ipressora) e all(tudo), e desta forma nós generalisamos muito as coisas pois existem diferentes tipos de telas e de impressoras por isto surge a necessidad ede trabalhar com as media features(Caracteristicas de medias).
+
+	A utilização destas duas em simultâneo formam as media quiries.
+
+	Para criar as media features basta adicionar as caracteristicas depois do nome da meida type:
+	media="screen and (orientation: portait)"-> Para retrato(de pe)
+	media="screen and (orientation: landscape)"-> Para paisagem(deitado)
+
+=============================================================
+			MOBILE FIRST
+
+	Este modelo cosiste em criar primeiro a versão movel de um syte e de seguida fazer adaptações para as versões de outras medias.
+	Este principio tem várias vantagens como:
+
+	-> Prioridade pelos mecanismos de busca, pois alguns mecanismos de busca valorizam mais sytes criados com este princípio.
+	-> Melhoria na experiência de usuário.
+
+=============================================================
+			Device Breakpoints
+
+	Tem haver com a resolução dos diferentes tipos de media;
+	-> Pequenas telas: ate 600px;
+	-> Celular: de 600px ate 768px;
+	-> Tablet: de 768px até 992px;
+	-> Descktop: de 992px até 1200px;
+	-> Grandes telas: acima de 1200px.
+
+49a09d 5f2c82

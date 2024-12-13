@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+section{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+}
+@property --angulo{
+    syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+}
+article{
+    background-image: conic-gradient(from var(--angulo),transparent, #ff0000, transparent, blue);
+    width: 45vw;
+    height: 45vh;
+    border-radius: 12px;
+
+    position: absolute;
+    z-index: -1;
+
+    animation: 3s spin linear infinite;
+}
+@keyframes spin{
+    from{
+        --angulo:0deg;
+    }
+    to{
+        --angulo:360deg;
+    }
+}
+
+article#cam2{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+div{
+    background-color: black;
+    color: white;
+    width: 40vw;
+    height: 40vh;
+    padding: 10px;
+    border-radius: 12px;
+
+    display: grid;
+    align-content: center;
+    gap: 8px;
+    overflow: visible;
+}
+div > p{
+    text-align: justify;
+}

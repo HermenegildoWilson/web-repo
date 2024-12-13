@@ -1,0 +1,41 @@
+@media screen and (min-width:600px) {
+    #cabecalho #menu, #cabecalho .btn-action{
+        display: flex;
+    }
+    .btn-menu, #menuLateral{
+        display: none;
+        right: -80%;
+    }
+    .visivel{
+        right: -80%;
+    }
+
+    #menu{
+        flex-flow: row;
+    }
+    
+    #menu ul{
+        display: none;
+        position: fixed;
+        top: 80px;
+        float: left;
+    }
+    #menu:hover ul.cardapioMenu{
+        display: flex;
+        background-color: #00000005;
+    }
+
+    #inicio{
+        flex-flow: row;
+    }
+    #inicio > * {
+        flex-basis: 360px;
+    }
+    h1{
+        width: 300px;
+    }
+
+    #banner img{
+        width: 100%;
+    }
+}

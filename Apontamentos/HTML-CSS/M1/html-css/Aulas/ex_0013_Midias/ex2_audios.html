@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audios</title>
+</head>
+<body>
+    <h1>Audios em html</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/media.png" type="image/png">
+        <img src="Imagens/grande.png" alt="Imagen grande">
+    </picture>
+    
+    <h1>Reproduzindo Audio</h1>
+    <audio src="audios/ayra_starr_commas.mp3" controls autoplay></audio>
+    
+    <audio preload="metadata" controls autoplay>
+        <source src="audios/ayra_starr_commas.mp3" type="audio/mp3">
+        <source src="audios/ayra_starr_commas.mp3" type="audio/mp3">
+    </audio>
+</body>
+</html>

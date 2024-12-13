@@ -1,0 +1,63 @@
+<!-- -->
+============================================================
+		      ALGUNS COMANDINHOS
+	-> window.alert(): Serve para disparar um determindao alerta(Saida de dado);
+	-> window.comfirm(): Serve para pedir uma confirmação(Ok e cancelar);
+	-> window.prompt(): Serve para pedir a entrada de um deteminado dado(Entrada de daod);
+
+	-> typeof: Serve para verificar o tipo de uma determinada variavel;
+
+============================================================
+		TIPOS DE VARIAVEIS E TIPOS de DADOS
+
+	Para as variaveis a maior parte das regras são as mesmas que já aprendi anteriormente em outros cursos.
+
+	A diferença está a declaração, para declarar uma variavel em JS usamos as palavras reservada: var, let e const;
+
+	Em JS temos 3 tipos de dados principais:
+
+	-> Number: São os tipos numéricos, ois esta linguagem não difere numeros inteiros e numeros reais ambos fazem parte do tipo number.
+	---------------------------------------------
+		SUB-TIPOS de number
+		=» Infinity, NaN: Not a number.
+
+	-> String: Cadeia de caracteres;
+
+	-> Boolean: Valores boleanos(verdadeiro e falso)
+
+	---------------------------------------------
+		SUB-TIPOS de dados
+		=» null;
+		=» undefined;
+		=» object =» array;
+		=» function
+
+============================================================
+			MANIPULAÇÃO DE DADOS	
+
+	Em JS para fazer a conversão de um dado do tipo string para o tipo Numérico usamos as seguintes comandos:
+	- Number.parseint(nome_da_variavel)
+	- Number.parsefloat(nome_da_variavel)
+
+	Tambem podemos fazer a conversão de um outro tipo para string, das seguintes formas:
+
+	- string(nome_da_variavel)
+	- nome_da_variave.toString()
+
+------------------------------------------------------------
+			FORMATAÇÃO DE STRINGS
+
+-TAMPLATE DE STRING
+	Serve para simplificar a exibição de daos de variaveis, consiste em colocar o valor das variaveis a serem exibidos entre sifrão e chavetas:
+	${nome_da_variavel}.
+
+		-> nome_da_string.length: Retorna o tamanho da sting;
+		-> nome_da_string.toUpperCase(): Coloca todas as letras de uma strig para maiuscula.
+		-> nome_da_string.toLowerCase(): Coloca todas as letras para minuscula.
+
+	SAIDA de DADOS: document.write
+
+------------------------------------------------------------
+			FORMATAÇÃO DE NUMEROS
+
+	nome_da_variavel.tofixed(Casas_decimais): Serve para indicar quantas casas decimais aparecem depois da virgula, para numeros reais.

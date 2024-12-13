@@ -1,0 +1,6 @@
+Comentário em html(<!---Texto-->)
+	Em html podemos ter:
+	-> Lisar ordenadas:
+		tag <ol (opcional: type="Tipo de numeração" start="Início")>Texto</>
+	-> Listar não ordenadas: 
+		tag <ul (opcional: type="cicle/square/disc")>Texto<ul/>

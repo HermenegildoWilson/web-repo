@@ -1,0 +1,73 @@
+	Tabelas em html, são muito importantes quando precisamos organizar dados ordenados de forma organizada, e são criadas coma tag table.
+	SINTAXE:
+<table>
+	table row = linhas de tabelas {<tr>Conteudo</tr>}
+		table header(opcional, cabeçalho de tabela)
+		table date(dados da tabela)
+</table>
+
+====================================================================
+			DELIMITAÇÃO DE UMA TABELA
+
+	Fazendo isso só delimitamos as celulas para formar as linhas temos que configurar as bordas de cada td(dado da tabela), e podemos ainda configurar o tamanho usando o padding e a largura e haltura
+
+	NB: Podemos configurar o espaçamento entre as celulas com a função border-collapse: collapse;
+
+===================================================================
+		ALINHAMENTO DO CONTEUDO DE UMA TABELA
+
+	Podemos fazer o alinhamento do conteudo usando as funções text-align(para o alinhamento horizontal) e vertical-align(para o alinhamento vertical)
+
+===================================================================
+		TRABALHANDO COM TABELAS MAIORES
+
+	Quando trabalhamos com tabelas mais grnades usamos a seguinte anatomia:
+	table
+		caption: Titulo da tabela
+		table head{thead}: Cabeçalho da tabela(Opcional)	
+		table body{tbody}: Corpo da tabela
+		table footer{tfooter}: Rodapé da tabela(Opcional)
+
+	OBS: Dentro de cada um dos itens  a cima podemos ter: Dados, linhas e cabeçalhos.
+
+	Nós tambem devemos indicar o escopo dos cabeçalhos (table head) passando o parametro scope, com o valor que indica a forma de organização dos dados respectivos a aquele cabeçalho.
+
+===================================================================
+				EFEITO ZEBRADO
+
+	Para fazer o efeito zebrado usamos a presudo classe nth-child(&&)
+	-> &&: Colocamos o intervlo de casas, com a unidade n, ou ainda especificamos se queremos as casas pares ou imapres
+	-> odd ou ainda 2n-1: para impar
+	-> even ou ainda 2n: para par
+
+===================================================================
+			CABEÇALHO FIXO
+
+	Para isso primeiro configuramos a posição da nossa tabela como relativa.
+	De seguida configuramos a posição do cabeçalho como sticky(colável)
+	Depois disso especificamos onde o cabeçalho vai colar, ou seja no topo(top).
+
+===================================================================
+			MESCLAGEM DE CELULAS
+
+	Em muitos casos nós precisaremos que uma celula ocupe duas ou mais celulas, para isso devemos fazer uma epanção, e podemos fazer esta espanção por colunas e por linhas:
+
+	-> colspan="": Para expandir por colunas, indicando o numero de colunas que ocupara entre as aspas
+	-> rowspan="": Par expandir por linhas.
+
+===================================================================
+			AGRUPAMENTO DE COLUNAS
+
+	Muitas vezes nos veremos na necessidade de agrupar as colunas de uma determinada tabela, para isso a html 5 tem a tag colgroup que serve para agrupar todas as colunas da nossa tabela.
+
+	SINTAXE: 
+	<colgroup>
+		<col>
+		<col>
+	<colgroup>
+	Colocando assim o numero de colunas que tivermos na tabela, desta forma podemos criar classes de colunas para noe permitir editar as mesmas ao nosso gosto.
+
+===================================================================
+			RESPONSIVIDADE
+
+	Para tronar uma imagem responsiva primeiramente colocamos a tabela dentro de uma div e de seguida configuramos o overflow horizontal como automático.

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organização da tela</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        main{
+            background: antiquewhite url(../imagens-cap19/wallpaper004.jpg) left center fixed;
+            background-size: cover;
+            position: relative;
+            height: 98vh;
+            text-align: center;
+        }
+        section{
+            background: lightgray url(../imagens-cap19/wallpaper002.jpg);
+            border-radius: 20px;
+            display: inline-block;
+            position: relative;
+            min-width: 300px;
+            height: 70vh;
+            margin-top: 15vh;
+            margin-bottom: 15vh;
+        }
+        section > iframe{
+            background: url(../imagens-cap19/icon-phone.png) no-repeat center center;
+            background-size: cover;
+            border-radius: 20px;
+            position: absolute;
+            width: 250px;
+            height: 60vh;
+
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        nav{
+            display: inline-block;
+            position: absolute;
+            width: 50px;
+            height: 60vh;
+
+            left: 100%;
+            top: 10%;
+            transform: translate(-100%, -10%);
+        }
+        nav > a{
+            margin-top: 10px;
+            padding: 10px;
+            display: block;
+        }
+        nav > a > img{
+            min-width: 30px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <iframe name="frame"></iframe>
+        </section>
+        <nav>
+            <a href="iframe006_redes.html" target="frame"><img src="../imagens-cap19/logos/icone-facebook.png" alt="Icone do"></a>
+
+            <a href="#"><img src="../imagens-cap19/logos/icone-github.png" alt="Icone do"></a>
+
+            <a href="#"><img src="../imagens-cap19/logos/icone-instagram.png" alt="Icone do"></a>
+
+            <a href="#"><img src="../imagens-cap19/logos/icone-linkedin.png" alt="Icone do"></a>
+
+            <a href="#"><img src="../imagens-cap19/logos/icone-twitter.png" alt="Icone do"></a>
+
+            <a href="#"><img src="../imagens-cap19/logos/icone-youtube.png" alt="Icone do"></a>
+        </nav>
+    </main>
+</body>
+</html>

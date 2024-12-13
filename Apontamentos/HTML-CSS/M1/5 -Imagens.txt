@@ -1,0 +1,29 @@
+	Os formatos de imagem mais usados em web são: 
+
+	jpg(Melhor formato para alta compctação, trabalhar com imagens mais grandes, como fundo, e ocupam menos espaço em disco)
+	png(Melhor transparência)
+
+	O tamanho máximo para uma imagem num site é 1500px de largura, mas para conteudo por ai uns 650px
+
+	tag para colocr uma imagem:
+		<img src="caminho do arquivo" alt="Frase alternativa">
+
+	Sites para pegar imagens de dominio público:
+		• UnSplash
+		• Pexels
+		• FreePik
+		• Rawpixel
+		• Pixabay
+		• Libreshot
+		• Wikimedia Commons
+
+OBS:  optemos sempre pelo formato JPEG com uma compactação entre 30% e 50%. Já o formato PNG 
+só deverá ser usado quando precisarmos de transparência na foto
+
+	Os icones de favorito funcionam melhor com imagens em formato ico, temos a baixo alguns sytes para criar icones(imagens no formato ico):
+		• iconarchive;
+		• favicon.cc;
+		• favicon.io
+	
+	O favicon(icon de favorito) é adicionado a partir do cabeçalho com a tag: 	
+		<link rel="shortcut icon" href="Nome do arquivo" type="image/x-icon">

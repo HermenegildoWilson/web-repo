@@ -1,0 +1,14 @@
+	Em css degrades são criados com duas funções: 
+	-linear-gradient();
+	-radial-gradient();
+	
+	Ambas passadas como parametro para a função ackground-image: &&;
+	SINTAXE:
+		background-image: linear-gradient(DD, C1, C2, Cn), Onde:
+	-> DD: Indica a direção do degrade[to rigth(para a direita), to left(para a esquerda), to top(para cima), to botton(para baixo)]
+	
+	-> C1: Indica a primeira cor do degrade;
+	-> C2: A segunda cor;
+	-> Cn: A ultima cor, visto que podemos usar enezimas cores.
+
+	Nós também podemos fazer alterações globais criando um selector com um asteriscos e dentro deste fazemos a desejadas configurações(como a altura "height")	

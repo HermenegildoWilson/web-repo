@@ -1,0 +1,13 @@
+	1- Funções: 
+		-> arrow functions
+		-> call backs
+		-> funções anónimas
+		-> as iife
+	2- Javascript funcional;
+	3- Orientação a objectos;
+	4- Modularização;
+	5- RegEx;
+	6- JSON: Estrutura de objectos.
+	7- Ajax;
+	8- NodeJS: Opcional;
+	9- Bibliotecas e framaworks;

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="cadastro.py">
+        <p>
+            <label for="provincia">Provincias: </label>
+            <select name="provincia" id="provincia">
+                <optgroup label="Norte">
+                    <option value="CB">Cabinda</option>
+                    <option value="UE">Uíge</option>
+                    <option value="ZR">Zaíre</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="CN">Cunene</option>
+                    <option value="MX">Moxico</option>
+                    <option value="NB">Namibe</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="prof">Nome: </label>
+            <input type="text" name="prof" id="prof" list="profi">
+            
+            <datalist id="profi">
+                <option>Cozinheiro</option>
+                <option>Developer</option>
+                <option>Médico</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="msg">Mensagem</label><br>
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Imforme uma mensagem..."></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

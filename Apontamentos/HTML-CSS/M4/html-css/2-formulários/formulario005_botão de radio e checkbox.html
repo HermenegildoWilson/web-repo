@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e Radio</title>
+</head>
+<body>
+    <form action="cadastro.py" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="sexof" value="F">
+            <label for="sexof">Feminino</label> <br>
+
+            <input type="radio" name="sexo" id="sexom" value="M">
+            <label for="sexom">Masculino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes preferidos</legend>
+            <input type="checkbox" name="espfut" id="espfut">
+            <label for="espfut">Football</label> <br>
+
+            <input type="checkbox" name="espbas" id="espbas">
+            <label for="espbas">Bascketball</label> <br>
+
+            <input type="checkbox" name="espnat" id="espnat">
+            <label for="espnat">Natação</label> <br>
+
+            <input type="checkbox" name="espten" id="espten">
+            <label for="espten">Tênis</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

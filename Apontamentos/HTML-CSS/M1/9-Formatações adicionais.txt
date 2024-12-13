@@ -1,0 +1,14 @@
+	->Marcador de texto: Cria uma marcação de teto, deixa com uma cor de fundo diferente.
+	tag: <mark>Texto</mark>
+
+	->Texo excluido: Marca uma linha no meio do texo.
+	tag: <del>Texto<del/>
+	
+	->Texto inserido(sublinhado): Sublinha o texto.
+	tag: <ins>Texto</ins>
+
+	->Texto sobrescrito: Espoente
+	tag: <sup>Texto</sup>
+
+	->Texto subscrito: Base
+	tag: <sub>Texto</sub>

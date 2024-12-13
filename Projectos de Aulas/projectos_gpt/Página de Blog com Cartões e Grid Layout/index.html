@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projecto</title>
+    <style>
+        /* CSS */
+.blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.post {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.post h2 {
+    margin: 0 0 10px;
+}
+.post a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s;
+}
+.post a:hover {
+    color: #0056b3;
+}
+
+    </style> 
+</head>
+<body>
+    <!-- HTML -->
+<section class="blog">
+    <article class="post">
+        <h2>Título do Post 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#">Leia Mais</a>
+    </article>
+    <article class="post">
+        <h2>Título do Post 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#">Leia Mais</a>
+    </article>
+    <article class="post">
+        <h2>Título do Post 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#">Leia Mais</a>
+    </article>
+</section>
+
+</body>
+</html>

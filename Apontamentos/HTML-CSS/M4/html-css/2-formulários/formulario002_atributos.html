@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo novos atributos</title>
+    <style>
+        html, body{
+            font-family: monospace;
+        }
+        input{
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adicionando novos atributos ao formulario</h1>
+    <form action="cadastro.py" method="post">
+        <p>
+            <label for="nusu">Usuario</label>
+            <input type="text" name="usuario" id="nusu" required minlength="5" maxlength="15" size="16" placeholder="Nome do usuario" autocomplete="username">
+        </p>
+        <p>
+            <label for="susu">Senha</label>
+            <input type="password" name="senha" id="susu" required minlength="5" size="10" placeholder="senha">
+        </p>
+        <p>
+            <input type="submit" value="Entrar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

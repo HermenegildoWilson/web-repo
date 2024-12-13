@@ -1,0 +1,27 @@
+		-------- IMAGENS DINÂMICAS -----------
+	Esta é uma forma de adicionar images adaptáveis ao syte, de forma que as imagens adaptem-se ao tamanho da tela.
+Para usar imagens dinamicas usa-se a tag picture:
+	SINTAXE:
+		<picture>
+			<source media="(min ou max-width: tamanho minimo ou máximo da imagem)" srcset="Carrega-se a imagem  alternativa" type="image/fotmato">
+			carrega-se a imagem de tamanho maximo
+		<\picture> 	
+
+	----------- AUDIOS -----------
+	Existem duas maneiras de colocar audio em um syte:
+	-> Tag audio:
+		SINTAXE:
+		<audio src="Carrega-se o audio"></audio>, passamos os parametros controls e autoply.
+	
+	-> Tag audio:
+		SINTAXE:
+		<audio>
+			<source src="Carrega -se o arquivo" type="tipo do arquivo">
+		</audio>
+
+Para alem dos parametros adicionados anteriormente podemos adicionr a tag o parametro prelod, que tem 3 opções:
+	:> auto:  Padrao, so termina de carregar o syte quando baixar todos os arquivos e isso pode ser perigoso quando trabalhamos com arquivos muito pesados.
+
+	:> metadata: Carrega apenas as informações do arquivo como a duração e o nome.
+	:> none: Não carrega nenhuma informação.
+

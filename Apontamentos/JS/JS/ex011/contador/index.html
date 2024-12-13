@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contador Personalisado</h1>
+    </header>
+    <main>
+        <p>
+            <label for="inicio">Inicio: </label>
+            <input type="number" name="inicio" id="inicio">
+        </p>
+        <p>
+            <label for="fim">Fim: </label>
+            <input type="number" name="fim" id="fim">
+        </p>
+        <p>
+            <label for="passo">Passo: </label>
+            <input type="number" name="passo" id="passo">
+        </p>
+        <input type="button" value="Contar" onclick="contar()">
+        <div id="texto"></div>
+    </main>
+    <footer>
+        <p>Syte criado por
+            <a href="https://github.com/hermenegildowilson">Hermenegildo Wilson</a>
+        </p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

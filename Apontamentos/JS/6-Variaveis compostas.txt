@@ -1,0 +1,3 @@
+	Também conhecidas como array's, são variaveis que armazenam mais de um dado.
+	E estes podem ser acessados por indices.
+	Para adicionar posições em um array usamos o comando push.

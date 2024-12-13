@@ -1,0 +1,12 @@
+	A configuração do peso de uma fonte pode ser feita através da função font-weight;
+	SINTAXE: font-weight: Opções;
+	Opções: Light, Normal, bold, bolder;
+
+	A configuração do stilo com a função font-style;
+	SINTAXE: font-style: Opções;
+	Opções: Italic, Normal, oblique;
+
+OBS: Nem todas as fontes obedecem a estas configurações.
+
+	Estas todas configurações podem ser feitas na mesma linha com a função font, endicando respectivamente o estilo, peso, tamanho e fonte;
+	SINTAXE: fonte: style weight size family;

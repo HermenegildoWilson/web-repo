@@ -1,0 +1,1 @@
+	O Git e o GitHub, são repositórios que permitem armazenar diverentes versões de um determinado projecto,sendo o Git um repositório local(porque armazena os projectos no computador) e o github um repositório remoto(porque armazena os arquivos num servidor, e a este processo damos o nome de push);

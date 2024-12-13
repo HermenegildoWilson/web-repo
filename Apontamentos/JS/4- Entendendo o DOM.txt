@@ -1,0 +1,59 @@
+Requisitos: Instalar a extenção(watch in chrome no VS code)
+
+	DOM - Document Object Model = Modelo de Objectos para Documentos: Que pode ser definido como um conjunto de objectos internos do navegador que fornecem o acesso aos componentes internos do nosso web-syte.
+
+
+	Arvore DOM: É uma arvore que começa da raiz, que dentro do navegador é o window, e dentro desta janela nos temos os seguintes objectos
+
+	-> location: Diz respeito a localização atual do syte como a url, paginas atual e anterior;
+
+	-> document: Representa o documento actual, e dentro deste nós temos o objecto 'documento' html, e dentro deste temos os objectos head e body
+
+	-> history: Que é responsável por quardar o histórico de navegação, tornando mais fácil a navegação pelo syte.
+
+	Esta arvore é muito importante pois permite que o JS navegue pelo documento html de forma eficiente.
+
+	Esta navegação pode ser feita utilizando 5 metodos principais de acesso:
+
+	-> Por marca: Consiste em selecionar os elementos pelo nome da tag, usando a função:
+		getElementsByTagName('nome_da_tag')[posição da tag no documento, partindo do 0]
+
+	-> Por id: Consiste em pegar um elemento pelo id da tag, com a função:
+		getElementById('id_da_tag')
+
+	-> Por nome: Consiste em pegar um elemento pelo nome, com a função:
+		getElementsByName('nome_do_elemento')[posição da tag no documento, partindo do 0]
+
+	-> Por classe: Consiste em pegar um elemento pelo nome da classe, com a função:
+		getElementsByClassName('nome_da_classe')[posição da tag no documento, partindo do 0]
+
+	-> Por selector: Consiste em pegar um elemento atravez do selector, utilisando a notação usada em css, com as funções:
+		querySelector()
+		querySelectorAll()
+
+		querySelector('caminho, ou anida os id's e classes')
+	Esta forma é muito semelhante a forma como fazemos as cofigurações de css.
+
+=============================================================
+			EVENTOS DOM
+
+	Isto tem haver com tudo que pode ocorrer com um elemento, maioria parte destes eventos envolvem a interação dos elementos com o mouse.
+	Alguns eventos muito comuns são:
+
+	-> mouseenter: Quando o mouse entra;
+
+	-> mousemove: Quando o mouse esta se movendo dentro;
+
+	-> mousedown: Quando precionamos o mouse;
+
+	-> mouseup: Quando deixamos de precionar o mouse;
+
+	-> click: Quando clicamos com o mouse;
+
+	-> mouseout: Quando movemos o mouse para fora.
+
+	Estes eventos podem ser disparados passando - os directamente como parametro das tag onde ocorrerão os eventos ou ainda criando Listner's no codigo JS, cabe ao desenvolvedor usar o seu metodo perferido.
+
+	No JS temos a sintaxe:
+
+	nome_do_elemento.addEventListener('nome_do_evento', nome da função a ser disparada(executada))

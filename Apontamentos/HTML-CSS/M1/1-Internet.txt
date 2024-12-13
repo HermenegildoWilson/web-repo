@@ -1,0 +1,37 @@
+	-----------------INTERNET-----------------	
+Tim Bernes - Lee, criou o protocolo 'http://'
+	
+	E a linguagem 'html: Hyper text Marcup Language':'Linguagem de marcação para hiper texto''
+	E o 'www':'World wide web' -> Rede de alcance mundial.
+
+	Existe uma diferença entre www e internet:
+	
+	A internet é uma rede de abrangência mundial, 'a rede que interconecta o mundo', E ela é constituida de servidores especialisados em u certo serviço ou protocolo, como:
+	
+	----> Servidores 'FTP': Para transferência de arquivos;
+	----> Protocolo 'goopher': Para a transferência de hiper textos simples;
+	----> Protocolo 'SMTP', 'POP3', 'IMAP': Envio e recepção de mensangens;
+	----> www: É o conjunto de servidores especializados em http, Que é uma sub rede dentro da internet.
+
+		-----------------FUNCIONAMENTO -----------------
+Codigo multi byte UTF-8
+Armazenamento: BYTE
+Transmição: bit
+	
+	Para termos acesso a internet precisamos de um aparelho que nos forneça este mesmos serviço, e não só, este aparelho também é responsável por fazer a conversão dos sinais das ondas quadradas enviadas pelo PC para ondas senoidais (modulação) e também fazer o processo inverso (dem-odulação)
+	
+	Cada syte na internet é armazenado em um servidor, ou possui um servidor, e o sistema responsavel por aceesar este é o DNS, ou seja, o DNS é como uma agenda eletrónica que armazena os IP's dos diversod sytes da internet.
+
+		-----------------FUNCIONAMENTO -----------------
+
+	Para que tenhamos nossos sytes na internet é prciso ter um:
+	----> DOMÍNIO, Paga - se um valor para ter (um nome que vai identificar o meu syte), e para isso temos de TLD(Top Level Domains: Domínio em alto nível), mas este dominio também temclasses:
+	--> GTLD: Generic TLD;
+	--> CCTLD: Country Code TLD
+	----> HOSPEDAGEM em um SERVIDOR, Paga -se para ter (os nossos sytes armazenados nele) 
+EX.: Temos a baixo uma URL(Uniforme Resource Locale): Localizador de Recurso Único
+
+		      Domínio.TLD
+		 www.{github.com/}gustavoguanabara
+	{sub-domínio}		  {caminho}
+

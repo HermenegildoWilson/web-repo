@@ -1,0 +1,41 @@
+	Para utilizar uma imagem como fundo usamos a função: background-image: url('Caminho para a imagem');
+
+	A imagem sera repetida de forma que cubra o fundo inteiro, podemos editar o tamanho da imagem com a função background-size: &&;
+	&&: olocamos respectivamente a largura e a altura desejadas;
+
+	Podemos ainda alterar o tamanho de uma imagem com a função background-size: ;
+	
+	E para que a imagem cubra a tela inteira passamos como parametros:
+	-> cover: para cubrir a tela inteira, não exibindo 100% da imagem mas fazendo com que ela se encaixe na tela;
+	-> contain: Para fazer a imagem se encaixar no centro da tela, fazendo com que a imagem se encaixe direitinho na tela;
+
+================================================================
+		Deixando o fundo fixo(vinculo-attachment)
+
+	Em alguns casos nós podemos ter a necessidade de deixar o nosso fundo fixo, de forma que a imagem não seja alterada quando rolamos o conteúdo, em css isto recebe o nome de vinculo do inglês attachment. Para fazer esta configuração usamos a função:
+	-> background - attachament: PP; Podemos passar os seguintes parametros.
+	-> PP = fixed: Para deixar a imagem de fundo fixa;
+	-> PP = scrolç: Para a imagem de fundo role com o conteudo;
+	
+	Mas nos podemos poupar linhas de codigo usando uma shorthand para a configuração do background, para isso usamos a função background indicando respectivamente:
+
+	-> a_cor_de_fundo
+	-> a_imagem_de_fundo
+	-> a_posição_da_imagem 
+	-> a_forma_de_repetição 
+	-> o_attachament
+
+	O tamanho da imagem não funciona para essa shorthand então devemos configura-lo como já aprendemos anteriormente.
+
+================================================================
+		Alinhamento vertical
+
+	Muitas vezes podemos ter a necessidade de colocar uma caixa no meio do nosso conteudo mas de forma vertical, para isso devemos:
+
+	-> Colocar a caixa a ser centralizada em uma outra caixa;
+	-> Configurar a posição da caixa que conter o elemento a ser centralizada como relative;
+	-> Configurar a posição da caixa a ser centralizada como absoluta;
+	-> Configuramos o top e o left a 50%;
+	-> Depois usamos a função transform: ; Passando o parametro translate, transladamos o caixa 50% para cima e 50% para a esquerda(passando valores negativos)
+
+	OBS: Toda caixa por padrão tem um posicionamento relativo.

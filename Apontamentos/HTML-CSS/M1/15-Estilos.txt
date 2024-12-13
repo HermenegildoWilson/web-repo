@@ -1,0 +1,15 @@
+		-------- Estilos INLINE --------
+	Os estilos são adicionados na mesma linha, é feito adicionado o parametro style a tag que dsejamos estilizar e passamos assim o estilo desejado.
+
+		-------- Estilos INTERNOS ---------
+ 	Desta forma os estilos são colocados dentro da tag style no head do nosso codigo, dentro desta tag "style" abrimos selectores que indiquem cada coisa que queremos estilizar(body, h1.., paragrafos, etc.)
+		
+		-------- Estilos EXTERNOS ----------
+	Tem maior impacto quando trabalhamos com várias páginas e todas elas usam a mesma formatação.
+	Cria -se um arquivo com extenção css e dentro deste colocamos todos os selectores dos estilos a serem usados nas paginas do syte, eou seja, consiste em criar um arquivo para armazenar todos os estilos.
+	
+	SINTAXE:
+	@charset "UTF-8"
+	selectores
+
+	E de seguida nás chamamos este arquivo nos cabeçalhos de cada arquivo html, com a tag <link rel="stylesheet" href="arquivo.css">

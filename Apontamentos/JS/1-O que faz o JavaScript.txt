@@ -1,0 +1,2 @@
+	A linguagem JS serve para dar interatividade aos sytes.
+	

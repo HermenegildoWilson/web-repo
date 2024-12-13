@@ -1,0 +1,17 @@
+Os principais ipos de formatação de texto em html: Negrito e Itálico
+	-> Negrio/Destaque: Temos duas formas a semântica e a não semântica
+						tegs:
+		->Forma semântica:		<strong>O texto fica aqui<strong/>
+		->Forma não semântica:		<b>O texto fica aqui<b/>
+
+A forma mais aconcelhavel de se utilizar é a forma semântica, porque a outra já foi considerada obsoleta;
+
+	-> Itálico / Ênfase: Como no caso anterior aqui também temos duas formas:
+				tags:
+		-> Semântica:		<em> O texto fica aqui<em/>
+		-> Não semântica	<i>O texto fica aqui<i/>
+
+Como ja foi dito, a melhor forma é a semântica pelo mesmo motivo.
+
+
+cntl + shift + p: Atalho para acessar a um menu do VS code, pesquisamos a opção(envelope com abreviatura) e colocamos o nome da tag deseja e precionamos enter.

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas maiores</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            margin-left: 20px;
+            position: relative;
+        }
+        caption{
+            background-color: rgb(0, 0, 0);
+            color: white;
+            border: 1px solid black;
+            padding: 18px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot{
+            background-color: rgb(124, 117, 117);
+            color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: rgb(124, 117, 117);
+        }
+        td.num{
+            text-align: right;
+        }
+        td.pos{
+            text-align: center;
+        }
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
+        }
+        p{
+            text-align: justify;
+            width: 200px;
+            margin: auto;
+            padding-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Usando tabelas grandes</h1>
+    <table>
+        <caption>População das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Posição</th>
+                <th scope="col">Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="pos">01</td>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td class="pos">02</td>
+                <td>Minas gerais</td>
+                <td class="num">21 568 283</td>
+            </tr>
+            <tr>
+                <td class="pos">03</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 204 943</td>
+            </tr>
+            <tr>
+                <td class="pos">04</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">31 535 284</td>
+            </tr>
+            <tr>
+                <td class="pos">05</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">84 747 300</td>
+            </tr>
+            <tr>
+                <td class="pos">06</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">19 456 033</td>
+            </tr>
+            <tr>
+                <td class="pos">07</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">19 446 396</td>
+            </tr>
+            <tr>
+                <td class="pos">08</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">53 864 367</td>
+            </tr>
+            <tr>
+                <td class="pos">09</td>
+                <td>Rio Grande do sul</td>
+                <td class="num">93 478 092</td>
+            </tr>
+            <tr>
+                <td class="pos">10</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">90 378 352</td>
+            </tr>
+            <tr>
+                <td class="pos">11</td>
+                <td>Mano gresco</td>
+                <td class="num">28 378 283</td>
+            </tr>
+            <td class="pos">12</td>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td class="pos">13</td>
+                <td>Minas gerais</td>
+                <td class="num">21 568 283</td>
+            </tr>
+            <tr>
+                <td class="pos">14</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 204 943</td>
+            </tr>
+            <tr>
+                <td class="pos">15</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">31 535 284</td>
+            </tr>
+            <tr>
+                <td class="pos">16</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">84 747 300</td>
+            </tr>
+            <tr>
+                <td class="pos">17</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">19 456 033</td>
+            </tr>
+            <tr>
+                <td class="pos">18</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">19 446 396</td>
+            </tr>
+            <tr>
+                <td class="pos">19</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">53 864 367</td>
+            </tr>
+            <tr>
+                <td class="pos">20</td>
+                <td>Rio Grande do sul</td>
+                <td class="num">93 478 092</td>
+            </tr>
+            <tr>
+                <td class="pos">21</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">90 378 352</td>
+            </tr>
+            <tr>
+                <td class="pos">22</td>
+                <td>Mano gresco</td>
+                <td class="num">28 378 283</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <th scope="row">Total de habitantes</th>
+                <td class="num">936 378 738</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus nulla accusantium nobis excepturi, non ratione qui, eaque, officiis necessitatibus adipisci vel cumque sequi aperiam nihil rerum fuga minus deleniti quas.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, nulla quisquam illo ea libero deserunt explicabo dolorem omnis eaque necessitatibus iste saepe. Pariatur vitae est assumenda mollitia aspernatur nesciunt provident!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nostrum voluptatem quisquam eligendi dolorum iusto, fugiat id, velit in explicabo earum molestias? Quia, possimus rem aperiam laudantium beatae iste veniam.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur natus numquam placeat excepturi et fugit iure tenetur ducimus ipsa quia eius temporibus nam voluptate rerum eaque rem modi, est tempore.
+    </p>
+</body>
+</html>

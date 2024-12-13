@@ -1,0 +1,22 @@
+	iframe ou inline frames podem ser considerados como quadros ou molduas em linhas.
+	
+	Elesservem para abrir uma janela para um outro syte, mas alguns sytes têm uma proteção que não pertmitem exibir o seu conteudo em iframes.
+
+	O tamanho padrão de um iframe é de 300X150 pixels, mas nós podemos configurar o tamanho usando css ou ainda fazemos a configuração passando as funções como parámetro.
+
+=======================================================================
+		INCONVENIENTES COM IFRAMESS
+
+	Apesar dos iframes serem muito uteis em alguns casos eles tambem trazem consigo alguns inconvenientes, como:
+
+	-> Dificulta os mecanismos de busca de indexar()identificar o conteudo que estiver no iframe, para resolver este problema não devemos criar os nossos sytes com muitos iframes e evitar colocar neles conteudos muito relevantes para o syte.
+
+	-> Usuabilidade e assebilidade: Eles dificultam os software leitores de tela tambem não conseguem acessar ao conteudo dos iframes.
+
+	-> Segurança: Os iframes impactm a segurança do syte porque ao criar um iframe estaremos abrindo uma janela de acesso ao nosso syte, permitindo que o outro syte acesse o nosso e caso o mesmo seja atacado o nosso syte também poderá ser afetado.
+	Para evitar este problema devemos prestar muita atenção aos syte que damos acesso.
+
+	Uma outra dica para deixar os iframes mais seguros é passar o parametro sandbox e passar o valor sandbox, isso bloqueara o acesso de outros sytes para o nosso.
+	Para aumentar a proteção nós ainda podemos adicionar o parametro referrerpolicy com o valor no-referrer, isso deixa claro que o syte não coletará nenhum dado.
+
+	Os iframes aindam podem ser muito úteis quando precisamos fazer a incorporação de videos, mapas, e muitas outras coisas a partir de outros sytes.

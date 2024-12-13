@@ -1,0 +1,258 @@
+:root{
+    --fontMonserrat: 'monserrat', cursive;
+
+    /*
+    --corL0: #F2E9CE;
+    --corL1: #D9C8A9;
+    --corL2: #D95A11;
+    --corL3: #D93D1A;
+    --corL4: #BF1B1B;
+    */
+
+    --corL4: #ffa500;
+    --corL3: #cc8f0a;/*#ffb733*/
+    --corL2: #ffc966;
+    --corL1: #ffedcc;
+    --corL0: #ffedccad;
+    --corL-1: #F2E9CE;
+
+    --corA0: #1d1d1dad;
+}
+
+body{
+    background-color: var(--corL0);
+}
+button{
+    border: none;
+    background-color: transparent;
+    color: var(--corA0);
+    font-weight: 600;
+    cursor: pointer;
+}
+#cabecalho a:hover, button:hover{
+    scale: 1.04;
+}
+
+#cabecalho {
+    background-color: var(--corL1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 30px;
+    box-shadow: 0px 0px 8px 3px #0000001a;
+    position: sticky;
+    top: 0;
+}
+
+#logo > img{
+    max-width: 80px;
+    border-radius: 50%;
+}
+
+#cabecalho #menu, #cabecalho .btn-action{
+    display: none;
+}
+
+#menu {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+#menu > li > a{
+    color: var(--corA0);
+    font-weight: 600;
+    padding: 8px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.cardapioMenu{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+.cardapioMenu a{
+    padding: 4px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.btn-menu{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: 50px;
+    height: 60px;
+    border: none;
+    background: transparent;
+}
+
+.btn-menu .linha{
+    width: 90%;
+    height: 3px;
+    border-radius: 8px;
+
+    background-color: var(--corA0);
+
+    transform-origin: center;
+    transition: .5s;
+    transition-delay: margin-left 4s;
+}
+.btnMenuClicked .linha:nth-child(1){
+    transform: translateY(13px) rotate(45deg);
+}
+.btnMenuClicked .linha:nth-child(2){
+    width: 0;
+}
+.btnMenuClicked .linha:nth-child(3){
+    transform: translateY(-13px) rotate(-45deg);
+}
+
+.menuLateral{
+    background-color: var(--corL1);
+    position: fixed;
+    top: 0;
+    right: -80%;
+
+    height: 100vh;
+    width: 80%;
+    padding-top: 20px;
+
+    transition: .5s;
+    transition-delay: .1s;
+}
+
+.menuLateral > #menu{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 50px;
+}
+
+.menuLateral #cardapioMenu{
+    margin-left: 30px;
+}
+
+.menuLateral div{
+    margin-bottom: 45px;
+    margin-right: 30px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.visivel{
+    right: 0;
+}
+
+.btn-action{
+    background: var(--corL4);
+    font-size: 1.2em;
+    padding: 10px 14px;
+    border-radius: 10px;
+}
+.ativo{
+    background-color: #cc8f0a2a;
+}
+
+#conteudo{
+    display: grid;
+
+    padding: 10px;
+}
+
+#inicio{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px;
+}
+
+#descricao{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    gap: 30px;
+    width: 100%;
+
+    color: var(--corA0);
+    margin-bottom: 60px;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 2em;
+    margin-top: 40px;
+}
+h1 span {
+    color: var(--corL3);
+}
+
+#descricao p {
+    margin-left: 30px;
+    font-size: 1.2;
+}
+#descricao button{
+    align-self: center;
+}
+#banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 60px;
+}
+#banner img{
+    width: 100%;
+}
+
+#cardapio{
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+    align-items: center;
+}
+
+#cardapio h2{
+    font-size: 1.7em;
+    color: var(--corL3);
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+#cardapio > p{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.item-cardapio {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.h3Titulo {
+    color: var(--corL3);
+    font-size: 1.3em;
+}
+
+.itemDescricao{
+    text-align: center;
+}
+
+#rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}

@@ -1,0 +1,43 @@
+192024
+Restaurante:
+
+"Descubra sabores inesquecíveis!"
+"Uma experiência culinária única espera por você."
+"Reserve sua mesa e viva o prazer da gastronomia."
+Cadastro de desenvolvedores:
+
+"Conecte-se com oportunidades incríveis!"
+"Cadastre-se e mostre seu talento ao mundo."
+"Sua carreira começa aqui. Junte-se agora!"
+
+Lasanha
+Feijoada
+Sushi
+Churrasco
+Pizza Margherita
+Bacalhau à Brás
+Paella
+Hambúrguer
+Tacos
+Risoto de Camarão
+Frango à Passarinho
+Ratatouille
+Ceviche
+Nasi Goreng
+Pad Thai
+Coq au Vin
+Bife Wellington
+Shawarma
+Goulash
+Moqueca de Peixe
+
+João
+Maria
+Pedro
+Ana
+Carlos
+Sofia
+Lucas
+Laura
+Miguel
+Beatriz

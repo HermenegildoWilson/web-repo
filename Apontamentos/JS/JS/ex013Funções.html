@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <p>Numero: 
+        <input type="number" name="num" id="num">
+        <input type="button" value="Fatorial" onclick="fact()">
+        <div id="txt">Ola</div>
+    </p>
+    
+    <script>
+        function fact() {
+            function fatorial(num) {
+                let fa = 1
+                for (let i = num; i != 0; i--) {
+                    fa *= i
+                }
+                return fa
+            }
+            var x = Number(document.querySelector('input#num').value)
+            var txt = document.querySelector('div#txt')
+            txt.innerHTML = fatorial(x)
+        }
+    </script>
+</body>
+</html>

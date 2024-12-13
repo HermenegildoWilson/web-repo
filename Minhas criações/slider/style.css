@@ -1,0 +1,110 @@
+*{ 
+    padding: 0px;
+    margin: 0px;
+
+    box-sizing: border-box;
+}
+
+body{
+    background: url(img/avengers/Thor1.jpg) center center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+
+    animation: rodar 20s backwards alternate ease-in-out infinite;
+    animation-delay: .2s;
+}
+@keyframes rodar {
+    0% {
+        background: url(img/avengers/Thor1.jpg) center center;
+        background-size: cover;
+    }
+    10% {
+        background: url(img/avengers/Iron_Man1.jpg) center center;
+        background-size: cover;
+    }
+    20% {
+        background: url(img/avengers/Homem_aranha1.jpg) center center;
+        background-size: cover;
+    }
+    30% {
+        background: url(img/avengers/Pantera_negra2.jpg) center center;
+        background-size: cover;
+    }
+    40% {
+        background: url(img/avengers/Bruxa_Scarlet1.jpg) center center;
+        background-size: cover;
+    }
+    50% {
+        background: url(img/avengers/captain_america2.jpg) center center;
+        background-size: cover;
+    }
+    60% {
+        background: url(img/avengers/Dr_Estranho3.jpg) center center;
+        background-size: cover;
+    }
+    70% {
+        background: url(img/avengers/Gavião_Arqueiro1.jpg) center center;
+        background-size: cover;
+    }
+    80% {
+        background: url(img/avengers/Hulh1.jpg) center center;
+        background-size: cover;
+    }
+    90% {
+        background: url(img/avengers/Viuva_negra3.jpg) center center;
+        background-size: cover;
+    }
+    100% {
+        background: url(img/avengers/Viuva_negra3.jpg) center center;
+        background-size: cover;
+    }
+}
+#conteiner {
+    height: 100vh;
+
+    position: relative;
+}
+
+#imagens {
+    width: 566px;
+    height: 430px;
+
+    position: absolute;
+    top: 15%;
+    left: 250px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: repeat(10, 270px);
+    gap: 10px;
+}
+.img {
+    height: 430px;
+}
+
+#imagens img{
+    object-fit: cover;
+    object-position: top center;
+    height: 100%;
+    width: 100%;
+}
+
+#imagens img:nth-child(1){
+    animation: apresentar 20s backwards alternate ease-in-out infinite;
+    animation-delay: .2s;
+}
+
+@keyframes apresentar {
+    0% {margin-left: 0px;}
+    10% {margin-left: -280px;}
+    20% {margin-left: -560px;}
+    30% {margin-left: -840px;}
+    40% {margin-left: -1120px;}
+    50% {margin-left: -1400px;}
+    60% {margin-left: -1680px;}
+    70% {margin-left: -1960px;}
+    80% {margin-left: -2240px;}
+    90% {margin-left: -2520px;}
+    100% {margin-left: -2520px;}
+}

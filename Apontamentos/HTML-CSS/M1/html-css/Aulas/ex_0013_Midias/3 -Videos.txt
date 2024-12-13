@@ -1,0 +1,14 @@
+	A plataforma para bsixar videos free é a pexels para evitar os direitos autorais.
+ 
+	Os formatos mais suportados para video sao: mp4, m4v, webm(são mais pequenos e com menos qualidades), ogv.
+
+	Para converter os videos usamos o programa handbrake
+	
+	Usa-se a tag video mais a sintaxe.
+	
+	Para os videos nós podemos adicionar um parametro para indicar a capa do video que é a tag poster.
+
+	Mas carregar videos desta forma causa um consumo de banda muito grande e isso aumenta os custos da hospedagem, para evitar estes gastos usamos a técnica a baixo.
+	
+	------------- Videos Externos -----------
+	Esta é uma forma de corrigir o problema que vimos anteriormente, ela consitem em pegar os videos para o syte de outras plataformas como o vimeo e o youtube, indo na opção partilhar e de seguida inspecionar, nos será gerado um código e o qoe temos de fazer é copiar e colar no nosso codigo fonte

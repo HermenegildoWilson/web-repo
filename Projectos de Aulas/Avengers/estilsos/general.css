@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'titulos';
+    src: url(../fontes/MPLUSRounded1c-ExtraBold.ttf);
+}
+@font-face {
+    font-family: 'padrao';
+    src: url(../fontes/MPLUSRounded1c-Light.ttf);
+}
+
+*{
+    font-family: 'padrao';
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    background-color: white;
+    color: white;
+}
+
+header{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: grey;
+}
+
+header > div#logo{
+    background: url(../img/avengers-logo.png) center center no-repeat;
+    background-size: contain;
+    height: 90px;
+
+    flex: auto;
+}
+header > nav{
+
+    flex: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header > nav > a{
+    background-color: rgba(211, 211, 211, 0.452);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+header > div#banner{
+    background: url(../img/Sbanner.jpg) center center no-repeat;
+    background-size: cover;
+    height: 200px;
+
+    flex: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+h2::before{
+    color: red;
+    font-weight: bold;
+    content: "| ";
+}
+h2{
+    padding-top: 10px;
+}
+main{
+    background-color: lightblue;
+    padding: 10px;
+    width: 355px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+main section#galeria{
+    background-color: grey;
+    width: 320px;
+    height: 220px;
+    position: relative;
+
+    animation: rodar 15s alternate ease-in-out infinite;
+}
+
+@keyframes rodar {
+    0%{
+        transform: translate(0px);
+    }
+    100%{
+        transform: translate(-1900px);
+    }
+}
+
+section#galeria > div{
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .9s;
+}
+
+
+section#galeria > div#img02{
+    left: calc(320px);
+}
+section#galeria > div#img03{
+    left: calc(320px*2);
+}
+section#galeria > div#img04{
+    left: calc(320px*3);
+}
+section#galeria > div#img05{
+    left: calc(320px*4);
+}
+section#galeria > div#img06{
+    left: calc(320px*5);
+}
+section#galeria > div#img07{
+    left: calc(320px*6);
+}
+
+i{
+    display: inline-block;
+    position: absolute;
+    width: 50px;
+    
+    top: 50%;
+}
+i#icone-prev{
+    left: 20px;
+}
+i#icone-next{
+    right: 20px;
+}
+
+footer{
+    padding: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: grey;
+    gap: 10px;
+    align-items: center;
+}

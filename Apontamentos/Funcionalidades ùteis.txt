@@ -1,0 +1,1 @@
+	Podemos editar a barra de rolagem em uma pagina, podemos acessa-la via css com o nome ::webkit-scrollbar-(track=Fora, thumb=dentro);

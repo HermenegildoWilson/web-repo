@@ -1,0 +1,14 @@
+	Algumas tags muito úteis para tratamento(exibição) de códigos fonte:
+	-> cod: Serve para criar frases monoespassadas(com letras do mesmo tamanho)
+	-> pre: Exibi tudo que estiver nele considerando a identação(espaçamentos, quebras de linhas e tabulações), ao colocar o texto nesta tag ele também cria frases monoespaçadas.
+
+Estas formas são mais utilisadas para digitar códigos fonte;
+
+	Citação:
+	-> Simples: Apenas coloca o texto entre aspas dando sentido ao mesmo 	<q>Texto<q/>
+	-> Completas: Coloca o texto identado para dar um destaque ao mesmo: 	<blockquote>Texto<blockquote/>
+
+	Abreviações:
+	-> tag abbr: Serve para dar sentido as abreviações, e dá ao usuário o significado da mesma ao passar o cursor por cima da palavra;	<abbr title="Significado">Sigla<abbr/>
+	
+	Temos também a tag bdo que serve para imprimir uma frase invertida.  <bdo dir="$$">Texto<bdo/> $$ = rtl(Para imprimir do averso)

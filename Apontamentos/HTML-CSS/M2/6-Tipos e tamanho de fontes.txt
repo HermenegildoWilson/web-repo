@@ -1,0 +1,6 @@
+	Para o tamanho de uma fonte existem:
+	-=>» Medidas absolutas: cm, mm, in(polegada), px(pixel), pt(ponto), pc(pyca);
+
+	-=>« Medidas relativas: em(Reativa ao tamanho atual da fonte), ex()relativo a altura x de uma fonte), rem(reativo a fonte do body), vw(viewwidth = laegura da tela), vh(haltura da tela);
+
+	Mas de todas estas as mais aconselháveis de se utilizar são o em e o px;

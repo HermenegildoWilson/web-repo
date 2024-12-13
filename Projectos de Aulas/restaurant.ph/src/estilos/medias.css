@@ -1,0 +1,14 @@
+@media screen and (min-width: 685px) {
+    #menu{
+        display: flex;
+        flex-flow: row;
+    }    
+    #btn-menu{
+        display: none;
+    }
+    .cabecalho > div{
+        grid-column: span 1;
+        justify-content: flex-end;
+        display: flex;
+    }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Elementos, cor, range e file</h1>
+    <form action="cadastro.py">
+        <p>
+            <label for="cor">Cor: </label>
+            <input type="color" name="cor" id="cor">
+        </p>
+        <p>
+            <label for="nivsat">Nivel de satisfação: </label>
+            <input type="range" name="nivsat" id="nivsat" step="5">
+        </p>
+        <p>
+            <label for="fotop">Foto de perfil: </label>
+            <input type="file" name="fotop" id="fotop">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

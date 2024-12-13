@@ -1,0 +1,1 @@
+Outras versões da html focavam - se em formas e significado, mas a html5 só se foca em significado(semantica), ou seja as formas ficaram para as css, mas estas formas ainda podem ser utilizadas só que a comunidade html já as acha obsoletas('ultrapassadas') e não se aconcelha mas o uso destas.y

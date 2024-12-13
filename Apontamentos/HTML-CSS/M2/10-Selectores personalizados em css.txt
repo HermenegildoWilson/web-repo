@@ -1,0 +1,33 @@
+	-------------- ID's ------------------
+	Estes são muito importantes quando queremos que dois ou mais elementos da mesma classe html tenham configurações diferentes.
+
+	Para isso passamos como parametro da tag o parametro id="Nome do identificador", e quando quisermos edita-lo temos a sintaxe:
+	nome da tag#nomo do identificador{
+
+	}
+
+		----------- CLASSES ---------------	
+	Mas trabalhando com id nos ficamos um pouco elemento porque um id so pode pertencer a um e unico elemento, por esta razão em alguns casos nós não usamos id's mas sim classes.	
+	
+	A sintaxe para o uso é semelhante só diferem na forma de identificação com od's nos usamos #(esteg) e com classes nos usaremos .(ponto)
+
+	--------------- PSEUDO-CLASSES -------------
+	Estas são representadas por :(dois pontos), e elas têm de estar relacionadas a uma classe ou a um elemento, relacionam -se ao estado de um elemento, quando passamos o mouse por cima(houver), quando desligado(enable), e muitos mais estados.
+
+	div's que é uma tag que serve para delimitar o conteudo do nosso site em 'espaços' diferentes do codigo.
+	
+	======= pseudo classes =========
+	->» hover: serve para editar a ação que ocorre quando o mouse é passado em uma área específica do syte;
+
+	->» visited: Serve para editar algo que ja foram visitado;
+
+	->» active: serve para editar o que acontece quando algo for clicado;
+
+	------------- PSEUDO ELEMENTOS -------------´
+		São representados por ::;
+
+	-------------- ANOTAÇÕES -------------
+
+	Em html id: em css #;
+	Em html class: em css .;
+	Em html pseudo-clases: em css :;

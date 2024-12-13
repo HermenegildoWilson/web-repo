@@ -1,0 +1,15 @@
+	O emmet é uma funcionalidade do VsCode que nos ajuda na escrita de codigos de forma mais dinâmica, de forma a auto completar os codigos, podemos usar as seguintes formas de abreviação:
+
+	-> Para criar tag "irmãs", separadas as mesmas com um sinal de +;
+
+	-> Já para criar uma cadeia de tags, ou seja uma dentro da outra separamos com o sinal de maior >, seguindo a ordem de criação desejada;
+
+	-> Qunado desejamos colocar o conteudo da tag usamos as chaves {}, ou seja colocamos o nome da tag e de seguida colocamos o conteudo desta entre chaves;
+
+	-> Ja quando o objectivo é adicionar atributos as tags, colocamos os atributos entre parenteses retos [];
+
+	-> Podemos ainda multiplicar uma linha de emmet de forma que esta seja repetida pelo nº de vezes indicado.
+
+	-> Em alguns casos podemos ter a necessicade de diferenciar um determinado item na ordem depois da multiplicação, para isto colocamos o sifrão $ no lugar em que queremos que aparessa a ordem que no caso será numerica crescente.
+
+	NB: É possivel coinsilhar todos estes conhecimentos, mas em alguns casos é necessario a utilização de parentese para delimitar as areas.

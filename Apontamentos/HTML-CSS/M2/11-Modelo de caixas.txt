@@ -1,0 +1,50 @@
+	Este modelo é um congunto que se aplica tanto em html como em css, serve principalmente para nos ajudar a organizar o designe do site dividindo o mesmo em partes.
+	--------- Anatomia de uma caixa ----------
+	Em uma caixa primeiramente nós temos o conteudo;
+	De seguida temos as bordas do texto;~
+	Este mesmo box tem uma altura (height), e uma largura (width);
+	Podemos editar também o acoshoamento ou preenchimento(padding) que é o espaço que vai das bordas para dentro;
+	Bem como as margens (margin) que é o espaço que vai das bordas para fora;
+
+	Existem dois tipos de caixas:
+	->»box-level: Ocupam sempre linhas diferentes ou seja fazem quebras de linha e ocupam sempre a çlargura total da tela, como exemplo temos as tag's:
+	<div>, <h1> -<h6>, <p>, <main>, <header>, <nav>, <article>, <aside>, <footer>, <form>, <video>;
+
+	->»inline-level: Difente do tipo anterior estas não fazem uma quebra de linha e não ocupam a largura inteira da tela, como exemplo temos as tag's:
+	<span>, <a>, <code>, <small>, <strong>, <em>, <sup>-<sub>, <label>, <button>, <input>, <slect>.
+
+	=============== bordas, padding, margens e outline:
+
+	SINTAXE bordas: border: espessura(px) estilo(style) core;
+	
+	SINTAXE outline: espessura(px) estilo(style) core;
+
+	SINTAXE padding: padding: espessura(topo) espessura(direita) espessura(baixo) espessura(esquerda);
+
+	SINTAXE margens: margin: espessura(topo) espessura(direita) espessura(baixo) espessura(esquerda);
+
+	Podemos "transformar"  uma caixa do tipo level para o tipo inline (e where ever) adicionando a função display ao codigo css do box pasando como parametro block(para level-box) e inlene(para inline-box)
+
+
+	=============== TAG'S de AGRUPAMENTO =============
+	As tag de agrupamento como o nome já sugere servem para nos ajudar a agrupar ou ainda mesmo organizar o conteudo do nosso syte e as tags mais usadas são a <div> e a <span>, mas para além dessas a html5 também tem as chamadas div's semÂnticas: 
+	{
+		#<header>: Para o cabeçalho do syte
+		#<main>: Para o conteudo principal
+		#<footer>: Para o rodapé
+		#<nav>: Para link's externos
+		#<section>: Cria uma secção qualquer
+		#<article>: Cria uma secção para um determinado artigo
+		#<aside>: Relativo a alguma coisa;
+	}
+
+	"@-> Todo syte tem:
+
+	1- Um cabeçalho que é a apresentação do syte;
+	2- Um conteúdo principal, que é tido como a excência do syte;
+	3- E um rodapé que contém alguns link's extras e informações do autor.
+
+	A html 5 nos ajuda muito nesta organização com as tag's: <header>, <main> e <footer> representando respectivamente o que mencionamos à cima.
+===========================================
+		FUNÇÔES
+	-> overflow: hidden;-> Faz com que o conteudo colocado em uma caixa fique absolutamente dentro desta.

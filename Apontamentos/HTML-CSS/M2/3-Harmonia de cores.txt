@@ -1,0 +1,19 @@
+	Uma paleta de cores pode ter entre 3 à 5 cores no máximo com excepçãodo preto e do branco pois estes estarão sempre em nosso syte, e para fazer a seleção das cores desta mesma paleta temos que ter noção de algumas tipologias padrões de classificação das cores harmónias:
+	
+	-=>» CORES COMPLEMENTARES: Elas têm mais contraste entre si, são cores que ficam no lado imediatamente oposto da outra no ciclo cromático.
+
+	-=>» CORES ANÁLOGAS: Estas têm menor contraste entre si, mas elas armonizam bem, criando assim um degrade com 3 cores, são as cores que ficam imediatamente ao lado uma da outra;
+
+	-=>» CORES ANÁLOGAS E UMA COMPLEMENTAR: Consiste em criar uma paleta mais harmonizada mais com a necessidade de se ter um pouco mais de contraste, para isso pegamos primeiro as cores análogas e busccamos a complementar;
+
+	-=>» CORES ANÁLOGAS RELACIONADAS: Usa -se quando queremos ter um pouco de contraste mas também queremos ter uma boa harmonização, consiste em pegar duas cores análogas e pular uma cor e pegar a seguinte;
+
+	-=>» CORES INTERCALADAS: Usa -se quando queremos ter mais contraste só que esta opção nos dá menos harmonização deixando a paleta mais "Grosseira", consiste em pegar uma cor pular uma e pegar outra, repetindo o processo ate completar a paleta;
+	
+	-=>» CORES TRIADICAS: São cores intercaladas mas ao invez do passo da contagem for um nestas é 3;
+
+	-=>» CORES QUADRADAS: São cores intercaladas, mas com passo 2, esta nos permite usar cores fortes mas bem harónicas entre sí;
+
+	-=>» CORES TETRÁDICAS: Consiste em selecionar duas cores que harmonizem e buscar as complementares destas;
+
+	-=>» MONOCROMIA: Consiste em trabalhar com uma cor apenas alterando a sua saturação e o brilho, criando assim um efeito chamado degrade.

@@ -1,0 +1,6 @@
+	Para tornar um video externo responsivo devemos fazer o seguinte:
+	1-Colocar o iframe do video dentro de uma div específica;
+	2- Confiramos a position da div como relative;
+	3- E a position do iframe como absolut;
+	4- De seguida configuramos o padding para bixo da div até pegar o tamanho desejado, de forma que o video caiba nesta.
+	5- Depos é só configurarmos o top e o left do iframe, e taambém a altura e largura desejada.

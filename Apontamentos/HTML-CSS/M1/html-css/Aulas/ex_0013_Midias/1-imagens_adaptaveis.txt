@@ -1,0 +1,7 @@
+	Esta é uma forma de adicionar images adaptáveis ao syte, e forma que as imagens adaptem -se ao tamanho da tela.
+Para usar imagens dinamicas usamos a tag picture:
+	SINTAXE:
+		<picture>
+			<source media="(min ou max-width: tamanho minimo ou máximo da imagem)" srcset="Carrega-se a imagem  alternativa" type="image/fotmato">
+			carrega-se a imagem de tamanho maximo
+		<\picture>

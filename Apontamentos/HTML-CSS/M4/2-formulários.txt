@@ -1,0 +1,89 @@
+	Formulários são locais onde preenchemos determinados dados.
+	
+	Em html estes sõ formados com a tag <form></form>, e para coletar os dados usamos a tag input.
+
+	Mas na criação de um formulario existem alguns parametros obrigatorios:
+	-> Action: É a ação disparada quando o visitante submeter alguma informação.
+
+	É também muito importante especificar a relação entre a caixa de entrada e a informação que aparece antes dela, utilisando as lables, que servirão para especificar travez do id a que caixa de entrada cada etiqueta pertente.
+
+	Existem dois metodos para o envio de formularios em HTML, que são:
+	-> get: É o metodo parão o utilisado quando não especificamos outro metodo, este metodo coloca os dados coletados na URL.
+	-> post: É o metodo que não coloca os dados na URL.
+=====================================================================
+			ALGUNS ATRIBUTOS IMPORTANTES
+
+	-> required: Serve para tornar um campo de preenchimento obrigatório.
+
+	-> minlength: Serve para declarar o tamanho minimo de caracteres a serem inseridos em uma cixa de preenchimento.
+
+	-> maxlength: Serve para declarar o tamanho maximo de caracteres de uma caixa de preenchimento.
+
+	-> size: Serve para especificar o tamanho da caixa, de acordo com o numero de caracters que o mesmo pode ter.
+
+	-> placeholder: Serve para colocar um texto na caixa de forma a ilustrar mais o visitante do syte, texto este que sera sobreposto.
+
+	-> autocomplete: Serve para expecificar que tipo de dado sera inserido na nossa caixa(nome senha, etc).
+
+	-> value: configura um valor inicial para a caixa de texto.
+
+	-> max: Para especificar o valor maximo que pode ser inseridona caixa, para quando usamos caixas para receber valores numéricos, intervalor(range).
+
+	-> min: Para especificar o valor minimo, para quando usamos caixas para receber pvalores numéricos, intervalor(range).
+
+	-> step: Para especificar o pulo da contagem, para quando usamos caixas para receber pvalores numéricos.
+	-> checked: Serve para deixar um botão (cheackbox ou de radio) já marcado.
+
+======================================================================
+				CONTROLES
+	-----------------------------------------------------------
+	-> input do tipo number: É uma caixa de preenchimentoque só aceita valores numericos.
+	
+	-----------------------------------------------------------
+	-> input do tipo tel: Serve para coletar numero de telefone.
+	Podemos usar o parametro pattern, que serve para criar expreções reguares, e dentro deste nos colocamos o seguinte.
+
+	^--$: Este simbolos delimitam as expreções regualares.
+	--: São as expreções refulares que nos passamos: 
+		[0-9]{4}-[0-9]{4}: Significa que a caixa vai receber valores de 0 à 9 divididod  em 4 4.
+
+	fieldsec: Serve para criar uma caixa de delimitação.
+
+====================================================================
+				CHECKBOX
+	Estas são caixas de multiplas esolhas, com opções marcar e desmarcar.
+
+====================================================================
+				RADIO
+	Estes botões são usados quando queremos que dentre várias escolhas seja selecionada apenas uma, como por exemplo no caso da escolha do sexo, mas para isso os botões têm de ter o mesmo nome.
+	
+	Para que os dados sejam enviados de forma a serem bem identificados devemos configurar um valor que vai corresponder a escolha do usuario.
+
+====================================================================
+				SELECT
+	É um controle que permite criar uma lista de opções de forma que o visitante só possa escolher uma, diferente das cheackbox e radio este selctor nãofunciona com marca e desmarca, mas sim com uma lista.
+
+	Para cria-lo usamos a tag <select> onde passamos os parametros: name e id, como nas input's.
+
+	Dentro desta indicamos as opções com a tag option, onde passamos como parametro um value, que será a informação envidada caso seja a opção escolhidas.
+
+	Nós ainda podemos organizar as opções delimitando-as com a tag optgroup(cria um grupo de opções com caracteristicas em comum), permitindo que nós criemos uma label atraves desta.
+
+====================================================================
+				DATALIST
+	Este funciona semelhante ao anterior, a diferença entre eles é que, com o select vc não tem a possibilidade de digitar uma nova opção so tem de escolher uma entre as existentes, ja com este vc pode inserir uma nova informação.
+	
+	Ele é usado em conexão com uma caixa de entrada de texto normal. 
+	Primeiramente nós criams o input normal e de seguida criamos uma <datalist> coma mesma sintaxe da anterior só que nesta o value não é obrigatório, depois disso é só passarmos como parametro para o input da caixa de texto o parametro list com o id da datalist como valor.
+
+====================================================================
+				TEXTAREA
+
+	Serve para criar uma caixa de texto que caiba uma mensagem muito grande.
+
+====================================================================
+				OUTPUTS
+
+	Servem para criar uma caixa de saida de tratamento de dados internos como operações, etc.
+	Para fazer isso usamos a tag <output>, e de seguida onfiguramos as caixas que terão os dados a serem processaos, com a seuinte sintaxe:
+	-> oninput="id_da_caixa_de_saida.innerHTML = Number(id_da_caixa_que_contem_o_valor.value) operação Nummber(id_da_caixa_que_contem_o_valor.value)..."

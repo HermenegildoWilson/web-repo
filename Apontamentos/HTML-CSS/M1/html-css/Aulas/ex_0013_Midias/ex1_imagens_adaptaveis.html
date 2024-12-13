@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta content="viewport"
+    name="width=device-width,initial-scale=1.0">
+    <title>Imagens Adaptaveis</title>
+    <link rel="shortcut icon" href="../3.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/pequena.png" type="image/png">
+        
+        <source media="(max-width: 1050px)" srcset="Imagens/media.png" type="image/png">
+        
+        <img src="Imagens/grande.png" alt="Imagen Grande">
+    </picture>
+</body>
+</html>

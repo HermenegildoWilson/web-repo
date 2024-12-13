@@ -1,0 +1,29 @@
+==============---------------=================
+	->» padding: Esta  função deixa um espaço em branco nas laterais de um determinada "box" de texto, ou seja é o espaçamante que vai das bordas para dentro;
+
+	SINTAXE: padding: Tamanho_px;
+
+==============---------------=================
+	->» margin: Serve para determinar as margens de um determinado conteudo, ou seja é o espaçamento que vai das bordas para fora.
+
+	SINTAXE: margin: Tamanho das margens_px;
+
+	OBS: quando queremos margens centralizadas usamos o tamanho auto.
+
+==============---------------=================
+	->» border: Serve para editar as bordas de uma box;
+	
+	SINTAXE: border-radius: tamanho das bordas_px;
+	
+	OBS: Onde temos o radius podemos editar de forma a colocar outras opções que vão de acordo com o que desejamos.
+
+==============---------------=================
+	->» shadow: Serve para sombrear;
+	SINTAXE: shadow: DLpx DBpx EsPpx Cor, Onde:
+	DL: Indica o deslocamento lateral da sombra;
+	DB: Indica o deslocamento para baixo;
+	EsP: Indica o espalhamento da sombra;
+	Cor: Indica a cor da sombra.
+
+==============---------------=================
+	->» display: Serve para definir como determinado conteudo sera mostrado, e passamos como parametros deste a forma desejada;

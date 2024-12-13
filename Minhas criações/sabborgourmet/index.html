@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabour Gourmet</title>
+    <link rel="stylesheet" href="src/estilos/style.css">
+    <link rel="stylesheet" href="src/estilos/mobile.css">
+    <link rel="stylesheet" href="src/estilos/outrasMidias.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <div id="logo">
+            <img src="src/imagens/icones/logo.png" alt="Logotipo do Restaurante">
+        </div>
+        <nav>
+            <ul id="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li id="link-cardapio"><a  href="#cardapio">Cardápio</a></li>
+                <ul class="cardapioMenu">
+                    <li><a href="#aperitivos">Aperitivos</a></li>
+                    <li><a href="#pratosPrincipais">Pratos Principais</a></li>
+                    <li><a href="#sobremesas">Sobremesas</a></li>
+                    <li><a href="#bebidas">Bebidas</a></li>
+                    <li><a href="#menuInfantil">Menu Infantil</a></li>
+                </ul>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+            </ul>
+        </nav>
+        <button class="btn-action">Fazer Reserva</button>
+        <button class="btn-menu">
+            <span class="linha"></span><span class="linha"></span><span class="linha"></span>
+        </button>
+    </header>
+
+    <section class="menuLateral">
+        <div>
+            <button class="btn-menu">
+                <span class="linha"></span><span class="linha"></span><span class="linha"></span>
+            </button>
+        </div>
+        <ul id="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#cardapio">Cardápio</a></li>
+            <ul id="cardapioMenu">
+                <li><a href="#aperitivos">Aperitivos</a></li>
+                <li><a href="#pratosPrincipais">Pratos Principais</a></li>
+                <li><a href="#sobremesas">Sobremesas</a></li>
+                <li><a href="#bebidas">Bebidas</a></li>
+                <li><a href="#menuInfantil">Menu Infantil</a></li>
+            </ul>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <button class="btn-action">Fazer Reserva</button>
+        </ul>
+    </section>
+
+    <main id="conteudo">
+        <section id="inicio" class="seccao">
+            <article id="descricao">
+                <h1>Descubra sabores <span>inesquecíveis!</span></h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptatem non atque minus consectetur, porro, officia distinctio consequuntur sint!
+                </p>
+                <button class="btn-action">Fazer Reserva</button>
+            </article>
+            <article id="banner">
+                <img src="src/imagens/comida/Pratos Principais/banner.png" alt="Banner de Apresentação">
+            </article>
+        </section>
+        <sectio id="cardapio" class="seccao">
+            <h2>Cardápio</h2>
+            <p>Descubra sabores inesquecíveis!</p>
+
+            <article class="item-cardapio seccao" id="aperitivos">
+                <h3 class="h3Titulo">Aperitivos</h3>
+                <div>
+                    <div class="aperitivo">
+                        <h4 class="itemDescricao">Nome do aperitivo</h4>
+                        <img src="src/imagens/comida/Pratos Principais/dish.png" alt="aperitivo">
+                    </div>
+                </div>
+            </article>
+            
+            <article class="item-cardapio seccao" id="pratosPrincipais">
+                <h3 class="h3Titulo">Pratos Principais</h3>
+                <div>
+                    <div class="prato">
+                        <h4 class="itemDescricao">Nome do Prato</h4>
+                        <img src="src/imagens/comida/Pratos Principais/dish2.png" alt="pratoPrincipal">
+                    </div>
+                </div>
+            </article>
+            
+            <article class="item-cardapio seccao" id="sobremesas">
+                <h3 class="h3Titulo">Sobremesas</h3>
+                <div>
+                    <div class="sobremesa">
+                        <h4 class="itemDescricao">Nome da sobremesa</h4>
+                        <img src="src/imagens/comida/Pratos Principais/dish3.png" alt="aperitivo">
+                    </div>
+                </div>
+            </article>
+            <article class="item-cardapio seccao" id="bebidas">
+                <h3 class="h3Titulo">Bebidas</h3>
+                <div>
+                    <div class="bebida">
+                        <h4 class="itemDescricao">Nome do aperitivo</h4>
+                        <img src="src/imagens/comida/Pratos Principais/dish4.png" alt="bebida">
+                    </div>
+                </div>
+            </article>
+            <article class="item-cardapio seccao" id="menuInfantil">
+                <h3 class="h3Titulo">Menu Infantil</h3>
+                <div>
+                    <div class="comidaInfantil">
+                        <h4 class="itemDescricao">Nome da comida</h4>
+                        <img src="src/imagens/comida/Pratos Principais/dish.png" alt="aperitivo">
+                    </div>
+                </div>
+            </article>
+        </sectio>
+    </main>
+    <footer id="rodape">
+        <p>
+            &copy; Copyright
+        </p>
+    </footer>
+
+    <script src="src/script/script.js"></script>
+</body>
+
+</html>

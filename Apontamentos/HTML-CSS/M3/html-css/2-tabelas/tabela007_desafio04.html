@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio tabela 04</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse:collapse;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        th{
+            background-color: rgb(117, 108, 108);
+            color: white;
+        }
+        th.op{
+            background-color: white;
+            color: black;
+        }
+        th.media{
+            text-align: left;    
+        }
+
+        td.nota{
+            text-align: center;
+        }
+        td.nota::after, td.notamedia::after{
+            content: '.0';
+        }
+        td.notamedia{
+            background-color:  rgb(117, 108, 108);
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">Area</th>
+                <th scope="col" rowspan="2">Disciplinas</th>
+                <th scope="colgroup" colspan="2">Notas</th>
+                <th scope="col" rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4" class="op">Exatas</th>
+                <td>Matemática</td>
+                <td class="nota">0</td>
+                <td class="nota">0</td>
+                <td class="nota">0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td class="nota">0</td>
+                <td class="nota">0</td>
+                <td class="nota">0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td class="nota">0</td>
+                <td class="nota">0</td>
+                <td class="nota">0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class="nota">0</td>
+                <td class="nota">0</td>
+                <td class="nota">0</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="4" class="media">Média Exatas</th>
+                <td class="notamedia">0</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" class="op" rowspan="2">Humanas</th>
+                <td>História</td>
+                <td class="nota">0</td>
+                <td class="nota">0</td>
+                <td class="nota">0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="nota">0</td>
+                <td class="nota">0</td>
+                <td class="nota">0</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="4" class="media">Média Humanas</th>
+                <td class="notamedia">0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        output::after{
+            content: " anos de idade";
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.py" method="get">
+        <p>
+            <label for="
+            ano">Ano de nascimento:</label>
+            <input type="number" name="ano" id="ano" min="1900" max="2025" placeholder="Ex: 2023" oninput="idade.innerHTML=2024 - Number(ano.value)">
+            <br> <br>
+            <label for="
+            idade">Voce tem: </label>
+            <output id="idade">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

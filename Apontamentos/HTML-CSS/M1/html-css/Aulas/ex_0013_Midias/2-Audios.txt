@@ -1,0 +1,15 @@
+	Existem duas maneiras de colocar audio em um syte:
+	-> Tag audio:
+		SINTAXE:
+		<audio src="Carrega-se o audio"></audio>, passamos os parametros controls e autoply.
+	
+	-> Tag audio: Esta é a forma mais aconselhavel para se trabalhar pois desta forma nós podemos carregar as midias de diversos formatos diferentes e isto torna o nosso syte compativel com os varios nvegadores.
+		SINTAXE:
+		<audio>
+			<source src="Carrega -se o arquivo" type="tipo do arquivo">
+		</audio>
+Para alem dos parametros adicionados anteriormente podemos adicionr a tag o parametro prelod, que tem 3 opções:
+	:> auto:  Padrao, so termina de carregar o syte quando baixar todos os arquivos e isso pode ser perigoso quando trabalhamos com arquivos muito pesados.
+
+	:> metadata: Carrega apenas as informações do arquivo como a duração e o nome.
+	:> none: Não carrega nenhuma informação.

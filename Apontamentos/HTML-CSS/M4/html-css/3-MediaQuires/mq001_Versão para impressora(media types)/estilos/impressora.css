@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+
+/*-------- Estilo para Impressoras --------*/
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+html, body{
+    background-color: rgba(211, 211, 211, 0.247);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+header{
+    background-color: rgba(211, 211, 211, 0.742);
+    text-align: center;
+}
+header h1{
+    padding: 10px;
+}
+
+menu{
+    display: none;
+}
+
+main{
+    background-color: white;
+    margin: auto;
+}
+main h2{
+    padding: 10px;
+}
+main p{
+    font-size: 0.8em;
+    text-align: justify;
+    text-indent: 40px;
+}
+
+article::after{
+    content: "Artigo imprenso por www.hermenegildowilson.com";
+}

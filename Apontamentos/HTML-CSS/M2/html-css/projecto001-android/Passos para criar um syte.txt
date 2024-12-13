@@ -1,0 +1,23 @@
+	As coisas fundamentais no planeamento de um syte sõa:
+	
+	-> O layoat;
+		Para isso usamos o syte: https://mockflow.com/
+
+	-> As Cores;
+		Para isso usamos o syte: https://color.adobe.com/pt/
+
+	-> E as fontes.
+
+
+	Em css nós tabmém podemos declarar variaveis, estas são declradas num espaço chamado de root, e é um local onde fazemos edições de estilos glabais, todo nome de uma variavel em css começa com dois tracinhos.
+
+	Por padrao todas as caixax do tipo box-level já vem com medidas de margens e pading padrão, mas as vezes estas medidas são indezejadas, para isso abrimos um selector global:
+
+*{
+	margin: opx;
+	padding: 0px;
+}
+
+	Para ser um desenvolvedor profissional nós temos que pensar nos diferentes tamanhos de tela em que o nosso syte pode ser aberto a isto chamamos de responsividade.
+
+	Em css nós podemos determinar o tamanho minimo e o tamanho máximo de como será exibido o nosso conteudo com as funções min-width e max-width, editando assim tamanhos aceitáveis para a disposição do conteudo evitando a rolagem laterl quando aberto em telas mais pequenas e muito espalhamento quando em telas maiores,

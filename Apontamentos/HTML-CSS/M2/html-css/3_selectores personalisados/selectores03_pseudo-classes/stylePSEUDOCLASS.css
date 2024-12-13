@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+}
+
+div.texto{
+    background-color: lightgray;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+div.texto:hover{
+    background-color: yellow;
+}
+
+div.autor > p{
+    display: none;
+}
+
+div.autor:hover > p{
+    display: block;
+    background-color: aquamarine;
+    width: 500px;
+}

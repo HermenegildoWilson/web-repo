@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <link rel="stylesheet" href="estilos/general.css">
+    <link rel="stylesheet" href="estilos/media-quiries.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Login</h1>
+            <p>
+                Seja bem-vindo faça login para acessar a sua conta e ficar por dento de tudo sobre o desporto mundial!
+            </p>
+            <form action="cadastro.php" method="post">
+                <div>
+                    <label for="usuario"><i>🙎‍♂️</i></label>
+                    <input type="text" name="usuario" id="usuario" class="campo" required minlength="5" placeholder=" Nome de usuario">
+                </div>
+                <div>
+                    <label for="senha"><i>🔑</i></label>
+                    <input type="password" name="senha" id="senha" class="campo" required minlength="8" maxlength="15" placeholder=" Palavra passe">
+                </div>
+                <div id="log">
+                    <input type="submit" value="Login" id="log" class="botao">
+                </div>
+                <div id="esq">
+                    <a id="esq" href="#">Esqueci a palavra passe ⛔</a>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Site criado por <a href="https://github.com/HermenegildoWilson" target="_blank">Hermenegildo Wilson</a> para o <a href="https://github.com/gustavoguanabara" target="_blank">CursoemVideo</a></p>
+    </footer>
+</body>
+</html>

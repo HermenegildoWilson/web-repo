@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaçõe</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        main{
+            background-color: rgba(237, 216, 148, 0.738);
+            width: 500px;
+            height: 400px;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 15px auto;
+        }
+        main > h1{
+            padding: 10px;
+        }
+        main > div.campo{
+            height: 3em;
+            margin-bottom: 10px;
+        }
+        main > div > input{
+            border: 1px solid black;
+            border-radius: 3px;
+            font-size: 1em;
+            width: 90px;
+            height: 80%;
+            margin-right: 8px;
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Calculadora básicona</h1>
+        <div class="campo">
+            <input type="number" name="Sn1" id="Sn1" placeholder="Numero">
+            <input type="number" name="Sn2" id="Sn2" placeholder="Numero">
+            <input type="button" value="Somar" onclick="soma()">
+            <p style="display: inline;"> = </p>
+            <output id="res-soma"></output>
+        </div>
+
+        <div class="campo">
+            <input type="number" name="SUBn1" id="SUBn1" placeholder="Numero">
+            <input type="number" name="SUBn2" id="SUBn2" placeholder="Numero">
+            <input type="button" value="Subtrair" onclick="subtracao()">
+            <p style="display: inline;"> = </p>
+            <output id="res-sub"></output>
+        </div>
+
+        <div class="campo">
+            <input type="number" name="MULTn1" id="MULTn1" placeholder="Numero">
+            <input type="number" name="MULTn2" id="MULTn2" placeholder="Numero">
+            <input type="button" value="Multiplicar" onclick="multiplicacao()">
+            <p style="display: inline;"> = </p>
+            <output id="res-mult"></output>
+        </div>
+
+        <div class="campo">
+            <input type="number" name="DIVn1" id="DIVn1" placeholder="Numero">
+            <input type="number" name="DIVn2" id="DIVn2" placeholder="Numero">
+            <input type="button" value="Dividir" onclick="divisao()">
+            <p style="display: inline;"> = </p>
+            <output id="res-div"></output>
+        </div>
+    </main>
+
+    <script>
+        function soma() {
+            var n1 = window.document.getElementById('Sn1').value
+
+            var n2 = window.document.getElementById('Sn2').value
+            
+            var res = Number(n1) + Number(n2)
+
+            window.document.getElementById('res-soma').innerHTML = res
+        }
+
+        function subtracao() {
+            var n1 = window.document.getElementById('SUBn1').value
+            var n2 = window.document.getElementById('SUBn2').value
+            var res = Number(n1) - Number(n2)
+
+            window.document.getElementById('res-sub').innerHTML = res
+        }
+
+        function multiplicacao() {
+            var n1 = window.document.getElementById('MULTn1').value
+            var n2 = window.document.getElementById('MULTn2').value
+            var res = Number(n1) * Number(n2)
+
+            window.document.getElementById('res-mult').innerHTML = res
+        }
+
+        function divisao() {
+            var n1 = window.document.getElementById('DIVn1').value
+            var n2 = window.document.getElementById('DIVn2').value
+            var res = Number(n1) / Number(n2)
+
+            window.document.getElementById('res-div').innerHTML = res
+        }
+    </script>
+</body>
+</html>

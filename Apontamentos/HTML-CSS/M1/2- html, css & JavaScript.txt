@@ -1,0 +1,26 @@
+	-------------- LINGUAGENS --------------
+html: hyper text markup language(linguagem de marcação de hipert textos)
+	Focada em conteúdo(texto, imagem, videos, tabelas)
+		------- ESTRUTURA BÁSICA -------
+
+css: cascading style sheets(folhas de estilo em cascata)
+	Atrativos visuais(design)	
+
+JavaScript: Cria Interações no syte(menus, animações, validações)
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+		content="widrh=device-width,
+		initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		conteúdo
+
+	</body>
+
+</html>

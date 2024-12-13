@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'monserrat';
+    src: url(../Montserrat-VariableFont_wght.ttf);
+}
+
+:root{
+    --fontMonserrat: 'monserrat', cursive;
+
+    /*
+    --corL0: #F2E9CE;
+    --corL1: #D9C8A9;
+    --corL2: #D95A11;
+    --corL3: #D93D1A;
+    --corL4: #BF1B1B;
+    */
+
+    --corL5: #ffa500;
+    --corL3: #cc8f0a;/*#ffb733*/
+    --corL2: #ffc966;
+    --corL1: #ffedcc;
+    --corL0: #ffedccad;
+
+    --corA0: #192024ad;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+    font-family: var(--fontMonserrat);
+    color: var(--corA0);
+}

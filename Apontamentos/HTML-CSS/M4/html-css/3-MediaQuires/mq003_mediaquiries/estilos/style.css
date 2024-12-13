@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/*---- Estilos Gerais----*/
+@media all {
+    *{
+        padding: 0px;
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    html, body{
+        width: 100vw;
+        height: 100vh;
+        background-color:#233eff;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    h1{
+        color: white;
+        padding: 10px;
+    }
+}
+
+/*---- Estilos Paisagem----*/
+@media screen and (orientation: landscape) {
+    body{
+        background-image: url(../imagens/cev-landscape.jpg);
+        background-position: bottom center;
+    }
+}
+/*---- Estilos Retrato----*/
+@media screen and (orientation: portrait) {
+    body{
+        background-image: url(../imagens/cev-portrait.jpg);
+    }
+}

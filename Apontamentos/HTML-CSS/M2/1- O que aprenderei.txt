@@ -1,0 +1,8 @@
+	1- Cores:
+		Psicologia das cores;
+		Armonização das cores;
+		Escolha da paleta de cores para um determinada syte;	
+	2- Tipografia:
+		Anatomia de uma letra;
+		Caracteristicas das css aplicadas aos tipos (tamanho, peso, estilo, alinhamento de paragrafos);
+

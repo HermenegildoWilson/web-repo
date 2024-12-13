@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 767px) {
+    header, footer{
+        flex-flow: row wrap;
+    }
+    header > div#logo{
+        flex: 0 0 50%;
+    }
+    header > nav{
+        flex: 0 0 50%;
+    }
+}

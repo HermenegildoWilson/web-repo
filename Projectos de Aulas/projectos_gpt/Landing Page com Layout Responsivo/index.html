@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projecto</title>
+    <style>
+        /* CSS */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}
+nav a {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+}
+#about, #services, #contact {
+    padding: 20px;
+    margin: 20px;
+    background: #f4f4f4;
+}
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+.service-item {
+    padding: 20px;
+    background: #ddd;
+    text-align: center;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.service-item:hover {
+    background: #bbb;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+<header>
+    <h1>Meu Negócio</h1>
+    <nav>
+        <a href="#about">Sobre</a>
+        <a href="#services">Serviços</a>
+        <a href="#contact">Contato</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>Sobre Nós</h2>
+    <p>Somos uma empresa dedicada a fornecer soluções inovadoras.</p>
+</section>
+
+<section id="services">
+    <h2>Nossos Serviços</h2>
+    <div class="service-grid">
+        <div class="service-item">Serviço 1</div>
+        <div class="service-item">Serviço 2</div>
+        <div class="service-item">Serviço 3</div>
+        <div class="service-item">Serviço 4</div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contato</h2>
+    <form>
+        <label for="name">Nome</label>
+        <input type="text" id="name">
+        <label for="message">Mensagem</label>
+        <textarea id="message"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+</body>
+</html>

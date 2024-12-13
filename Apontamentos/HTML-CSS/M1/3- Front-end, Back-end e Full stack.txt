@@ -1,0 +1,5 @@
+front-end: Desenvolvimento de sytes em html+css+JavaScript, parte visual e intertiva do syte
+
+back-end: É a parte interna(por tras de tudo) e pode ser desenvolvida em: php e com uma versão adequada do JavaScript,python, C#, java, etc
+
+full-stack: O cara que manja de tudo.

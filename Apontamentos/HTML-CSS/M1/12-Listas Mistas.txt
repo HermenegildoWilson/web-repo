@@ -1,0 +1,7 @@
+	As lisas compostas são listas aninhadas, ou seja uma liosta dentro da outra, e estas podem ser ordenadas ou nao ordenadas.
+
+	-> Lista de definições:
+	<dl>
+		<dt>Termo</dt>
+		<>dd>Descrição<dd/>
+	</dl>

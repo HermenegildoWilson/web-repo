@@ -1,0 +1,22 @@
+	Em css podemos representar as cores usando várias métodos formas:
+	->> Utilizando o código hexadecimal para indicar a quantidade de vermelho, verde e azul;
+	SINTAXE: #XXVVAA, Onde:
+	XX: Os dois primeiros caracteres indicand a quantidade de vermelho;
+	VV: Indicam a quantidae de vermelho;
+	AA: Indicam a quantidade de azul.
+
+	->> Utilizando o modelo RGB, diferente do anterior neste a quantidade de cada cor primária presente na nova é indicada atravéz da numeração decimal, numeros estes que vão de 0 à 255.
+	SINTAXE:
+	rgb(XX, VV, AA), Onde:
+	XX: Representa a quantidade de vermelho;
+	VV: Representa a quantidade de verde;
+	AA: Representa a quantidade de azul.
+
+	->> Utilizando o método hsl(hue saturation lumination) consiste em criar uma nova cor indicando as porcentagens da matriz, saturação e luminosidade da mesma.
+	SINTAXE:
+	hsl(XX, VV, AA), onde:
+	XX: Indica a porcentagem da matriz;
+	VV: Porcentagem de saturação;
+	AA: Porcentagem de Luminozidade.
+	
+	Para além disso nos podemos acrescer um quarto parametro que vai indicar a trasparência, mas podemos controlar esta de forma mais dinâmica através da segunda barra de rolagem que aparece na paleta de cores.

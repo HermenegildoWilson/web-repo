@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsivo</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body onresize="MudaTela()">
+    <header>
+        <h1>Meu syte</h1>
+        <i onclick="open_closeMenu()">&Delta;</i>
+        <menu id="menu_de_opcoes">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando media quiries</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta eaque ea impedit quibusdam sit officiis deserunt consequuntur labore molestiae, repellendus odio aliquam tempore voluptate et quae. Eius soluta dolor necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo, officiis pariatur deserunt in repudiandae! Eius sequi at, amet natus possimus aspernatur error ullam assumenda non? Voluptatem magni aliquid sed! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium sed rerum minima exercitationem, in delectus dolorem quos a facilis nam ipsum porro fuga itaque nisi eius reprehenderit dolores, repudiandae praesentium.
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta eaque ea impedit quibusdam sit officiis deserunt consequuntur labore molestiae, repellendus odio aliquam tempore voluptate et quae. Eius soluta dolor necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo, officiis pariatur deserunt in repudiandae! Eius sequi at, amet natus possimus aspernatur error ullam assumenda non? Voluptatem magni aliquid sed! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium sed rerum minima exercitationem, in delectus dolorem quos a facilis nam ipsum porro fuga itaque nisi eius reprehenderit dolores, repudiandae praesentium.
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta eaque ea impedit quibusdam sit officiis deserunt consequuntur labore molestiae, repellendus odio aliquam tempore voluptate et quae. Eius soluta dolor necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo, officiis pariatur deserunt in repudiandae! Eius sequi at, amet natus possimus aspernatur error ullam assumenda non? Voluptatem magni aliquid sed! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium sed rerum minima exercitationem, in delectus dolorem quos a facilis nam ipsum porro fuga itaque nisi eius reprehenderit dolores, repudiandae praesentium.
+            </p>
+        </article>
+    </main>
+    <script>
+        function MudaTela(){
+            if(window.innerWidth >= 768){
+                menu_de_opcoes.style.display = "block"
+            }else {
+                menu_de_opcoes.style.display = "none"
+            }
+        }
+
+        function open_closeMenu(){
+            
+            if (menu_de_opcoes.style.display == "block") {
+                menu_de_opcoes.style.display = "none"
+            } else {
+                menu_de_opcoes.style.display = "block"
+            }
+            
+        }
+    </script>
+</body>
+</html>

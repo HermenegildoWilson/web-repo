@@ -1,0 +1,13 @@
+
+			tag:
+Parágrafos: 		<p>Conteudo</p>
+Quebras de linhas:	<br>
+Cabeçalho:		<h+numero>Conteudo</h+numero>
+
+		Tags para alguns simbolos:
+		&reg;	--> Marca registrada
+		&copy;	--> Copy Rigth
+		&trade; --> Marca registrada em ingles
+
+	Já os emojis são inseridos pela seguinte sintaxe:
+		&#xcodigo do emoji;

@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #468eec;
+    color: white;
+}
+header{
+    text-align: center;
+    padding: 15px;
+}
+main{
+    background-color: white;
+    width: 350px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 11px;
+    color: black;
+}
+main > div > p{
+    text-align: center;
+}
+p{
+    margin: 10px 0px;
+}
