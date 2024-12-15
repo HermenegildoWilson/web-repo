@@ -23,15 +23,15 @@
     --corCinza2: #e4e4e3;
     --corCinza3: #b8b8b7;
 
-    --corPendente: #e08f2c;
+    --corPendente: #e6a556;
     --corTarefaPendente: #f9e9d5;
     --corTextoPendente: #5d2222;
 
-    --corExecucao: #ea8d89;
+    --corExecucao: #eea4a1;
     --corTarefaExecucao: #fbe8e7;
-    --corTextoExecucao: #e7ea8a;
+    --corTextoExecucao: #333137;
 
-    --corConcluido: #223f5c;
+    --corConcluido: #4e657d;
     --corTarefaConcluido: #d3d9de;
     --corTextoConcluido: #5d4022;
 }
