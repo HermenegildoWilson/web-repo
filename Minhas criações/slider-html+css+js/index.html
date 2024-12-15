@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider html+css+js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Carrossel</h1>
+        <ul>
+            <li><button>1</button></li>
+            <li><button>2</button></li>
+            <li><button>3</button></li>
+            <li><button>4</button></li>
+            <li><button>5</button></li>
+            <li><button>6</button></li>
+            <li><button>7</button></li>
+            <li><button>8</button></li>
+            <li><button>9</button></li>
+            <li><button>10</button></li>
+            <li><button>11</button></li>
+            <li><button>12</button></li>
+        </ul>
+    </header>
+    <main class="conteudo">
+        <section class="conteiner-imagens">
+            <div class="imagem">
+                <img src="img/img1.jpg" alt="Imagem 1">
+                <div class="descricao">
+                    <h2>Slide 1</h2>
+                </div>
+            </div>
+            <div class="imagem">
+                <img src="img/img2.jpg" alt="Imagem 2">
+                <div class="descricao">
+                    <h2>Slide 2</h2>
+                </div>
+            </div>
+            <div class="imagem">
+                <img src="img/img3.jpg" alt="Imagem 3">
+                <div class="descricao">
+                    <h2>Slide 3</h2>
+                </div>
+            </div>
+            <div class="imagem">
+                <img src="img/img4.jpg" alt="Imagem 4">
+                <div class="descricao">
+                    <h2>Slide 4</h2>
+                </div>
+            </div>
+            <div class="imagem">
+                <img src="img/img5.jpg" alt="Imagem 5">
+                <div class="descricao">
+                    <h2>Slide 5</h2>
+                </div>
+            </div>
+            <div class="imagem">
+                <img src="img/img6.jpg" alt="Imagem 6">
+                <div class="descricao">
+                    <h2>Slide 6</h2>
+                </div>
+            </div>
+            <div class="imagem">
+                <img src="img/img7.jpg" alt="Imagem 7">
+                <div class="descricao">
+                    <h2>Slide 7</h2>
+                </div>
+            </div>
+            <div class="imagem">
+                <img src="img/img8.jpg" alt="Imagem 8">
+                <div class="descricao">
+                    <h2>Slide 8</h2>
+                </div>
+            </div>
+            <div class="imagem">
+                <img src="img/img9.jpg" alt="Imagem 9">
+                <div class="descricao">
+                    <h2>Slide 9</h2>
+                </div>
+            </div>
+            <div class="imagem">
+                <img src="img/img10.jpg" alt="Imagem 10">
+                <div class="descricao">
+                    <h2>Slide 10</h2>
+                </div>
+            </div>
+            <div class="imagem">
+                <img src="img/img11.jpg" alt="Imagem 11">
+                <div class="descricao">
+                    <h2>Slide 11</h2>
+                </div>
+            </div>
+            <div class="imagem">
+                <img src="img/img12.jpg" alt="Imagem 12">
+                <div class="descricao">
+                    <h2>Slide 12</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const botoes = document.querySelectorAll('button')
+        const slides = document.querySelectorAll('.imagem')
+
+        let contador = 0
+        let anterior = 0
+
+        if(!document.querySelector('btnAtivo')){
+            monitorSlide()
+        }
+
+        function monitorSlide() {
+            if (contador >= 0 && contador < slides.length) {
+                botoes[anterior].classList.remove('btnAtivo')
+                slides[anterior].classList.remove('slideAtivo')
+                
+                botoes[contador].classList.add('btnAtivo')
+                slides[contador].classList.add('slideAtivo')
+
+                contador += 1
+                anterior = contador-1
+            }else {
+                contador = 0
+            }
+        }
+
+        botoes.forEach(btn => {
+            btn.onclick = () => {
+                const pos = Number(btn.innerHTML)
+                contador = pos-1
+                monitorSlide()
+            }
+        })
+
+        setInterval(monitorSlide, 5000)
+    </script>
+</body>
+</html>

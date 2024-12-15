@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="tela-add-tarefa">
+        <abbr title="Cancelar">
+            <button class="close-tela">
+                <span class="btn-linha"></span>
+                <span class="btn-linha"></span>
+            </button>
+        </abbr>
+        <div class="formularioAddTarefa">
+            <label for="nome-tarefa">Nome da tarefa</label>
+            <input type="text" name="nome-tarefa" id="nome-tarefa">
+
+            <label for="descricao-tarefa">Descrição da tarefa</label>
+            <textarea name="descricao-tarefa" id="descricao-tarefa" maxlength="100"></textarea>
+
+            <button id="btnSubmit">Adicionar Tarefa</button>
+        </div>
+    </section>
+
+    <header>
+        <h1>To do list</h1>
+    </header>
+
+    <main>
+        <section class="painel-de-tarefas">
+
+            <article class="painel" id="pendente">
+                <div class="painel-cabecalho">
+                    <h2>Pendente</h2>
+                    <abbr title="Adicionar Tarefa">
+                        <button id="1" class="btn-plus">
+                            <span class="linha"></span>
+                            <span class="linha"></span>
+                        </button>
+                    </abbr>
+                </div>
+                <section class="painel-tarefa">
+
+                    <div draggable="true" class="tarefa" id="React">
+                        <div class="tarefa-descricao">
+                            <h3>React</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur!
+                            </p>
+                        </div>
+                        <div class="tarefa-area-de-acao">
+                            <abbr title="Eliminar">
+                                <button class="btn-eliminar-tarefa" name="React"></button>
+                            </abbr>
+                            <abbr title="Redimensionar">
+                                <button class="btn-redimensionar-tarefa" name="React"></button>
+                            </abbr>
+                        </div>
+                    </div>
+
+                </section>
+            </article>
+
+            <article class="painel" id="em-execucao">
+                <div class="painel-cabecalho">
+                    <h2>Em-execucao</h2>
+                    <abbr title="Adicionar Tarefa">
+                        <button id="2" class="btn-plus">
+                            <span class="linha"></span>
+                            <span class="linha"></span>
+                        </button>
+                    </abbr>
+                </div>
+                <section class="painel-tarefa">
+
+                    <div draggable="true" class="tarefa" id="Front-Hand">
+                        <div class="tarefa-descricao">
+                            <h3>Front-Hand</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur!
+                            </p>
+                        </div>
+                        <div class="tarefa-area-de-acao">
+                            <abbr title="Eliminar">
+                                <button class="btn-eliminar-tarefa" name="Front-Hand"></button>
+                            </abbr>
+                            <abbr title="Redimensionar">
+                                <button class="btn-redimensionar-tarefa" name="Front-Hand"></button>
+                            </abbr>
+                        </div>
+                    </div>
+
+                </section>
+            </article>
+
+            <article class="painel" id="concluido">
+                <div class="painel-cabecalho">
+                    <h2>Concluída</h2>
+                    <abbr title="Adicionar Tarefa">
+                        <button id="3" class="btn-plus">
+                            <span class="linha"></span>
+                            <span class="linha"></span>
+                        </button>
+                    </abbr>
+                </div>
+                <section class="painel-tarefa">
+
+                    <div draggable="true" class="tarefa" id="Python">
+                        <div class="tarefa-descricao">
+                            <h3>Python</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur!
+                            </p>
+                        </div>
+                        <div class="tarefa-area-de-acao">
+                            <abbr title="Eliminar">
+                                <button class="btn-eliminar-tarefa" name="Python"></button>
+                            </abbr>
+                            <abbr title="Redimensionar">
+                                <button class="btn-redimensionar-tarefa" name="Python"></button>
+                            </abbr>
+                        </div>
+                    </div>
+
+                </section>
+            </article>
+        </section>
+    </main>
+    <div draggable="true" class="tarefa"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

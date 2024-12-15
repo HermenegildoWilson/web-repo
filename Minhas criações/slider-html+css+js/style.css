@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+    list-style: none;
+}
+:root {
+    --cor1: #f9fafb;
+    --cor2: #e29d79;
+    --cor3: #115e59;
+    --cor4: #4b5563;
+
+    --alturaMenu: 250px;
+    --larguraBtn: 50px;
+    
+    --larguraImg: 90%;
+    --alturaImg: 150px;
+}
+body {
+    background-color: var(--cor4);
+    background: url(../../../Drag\ and\ drop.mp4);
+    height: 100vh;
+}
+
+.cabecalho {
+    background-color: #c4c4c4;
+    color: var(--cor2);
+    height: var(--alturaMenu);
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    gap: 20px;
+}
+.cabecalho h1 {
+    font-size: 2.2em;
+    font-variant: small-caps;
+}
+.cabecalho ul {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 50px);
+    gap: 10px;
+}
+.cabecalho ul button {
+    width: var(--larguraBtn);
+    height: 30px;
+    color: var(--cor2);
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #c4c4c433;
+    cursor: pointer;
+    box-shadow: 0px 0px 9px 1px #c4c4c433;
+    transition: .8s;
+}
+
+.btnAtivo {
+    width: 54px;
+    padding: 2px;
+    border-radius: 5px;
+    transform: translateY(-6px);
+    background-color: #115e5990;
+    
+}
+
+.conteudo {
+    height: calc(90vh - var(--alturaMenu));
+    width: 96vw;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-imagens {
+    position: relative;
+    min-width: var(--larguraImg);
+    min-height: var(--alturaImg);
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+.imagem {
+    position: absolute;
+    overflow: hidden;
+
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    scale: 0;
+    transform: translateX(calc(var(--larguraImg)*2));
+    transition: 1s;
+}
+.slideAtivo {
+    opacity: 1;
+    scale: 1;
+    transform: translateX(0);
+}
+
+.imagem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.descricao {
+    background-color: #f9fafb2d;
+    backdrop-filter: blur(.2em);
+    border-radius: 8px;
+    box-shadow: 0px 0px 9px 1px #c4c4c452;
+    color: var(--cor1);
+    text-shadow: 0px 0px 6px black;
+    
+    width: 85%;
+    margin-left: 20px;
+    padding: 8px;
+    transform: translateY(calc(var(--alturaImg)/-1.8));
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    :root {
+        --alturaMenu: 250px;
+        --larguraBtn: 50px;
+        --larguraImg: 70%;
+        
+        --alturaImg: 180px;
+    }
+    .cabecalho ul {
+        grid-template-columns: repeat(5, 50px);
+        gap: 15px;
+    }
+    .cabecalho ul li:nth-child(11) {
+        grid-column: span 3;
+    }
+    .cabecalho ul li {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 600px) {
+    :root {
+        --alturaMenu: 210px;
+        --larguraBtn: 60px;
+        
+        --alturaImg: 225px;
+    }
+    .cabecalho ul {
+        grid-template-columns: repeat(6, 50px);
+        gap: 22px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    :root {
+        --alturaMenu: 210px;
+        --larguraBtn: 60px;
+        
+        --alturaImg: 325px;
+    }
+    .cabecalho ul {
+        grid-template-columns: repeat(8, 50px);
+        gap: 22px;
+    }
+    .conteudo {
+        height: calc(100vh - var(--alturaMenu));
+    }
+    .cabecalho ul li:nth-child(9) {
+        grid-column: span 3;
+    }
+    .cabecalho ul li {
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 978px) {
+    :root {
+        --alturaMenu: 120px;
+        --larguraBtn: 50px;
+        
+        --alturaImg: 405px;
+    }
+    .cabecalho ul {
+        grid-template-columns: repeat(12, 50px);
+        gap: 10px;
+    }
+    .conteudo {
+        height: calc(100vh - var(--alturaMenu));
+    }
+}
+
+@media screen and (min-width: 978px) {
+    :root {
+        --alturaMenu: 100px;
+        --larguraBtn: 50px;
+        
+        --alturaImg: 405px;
+    }
+    .cabecalho {
+        justify-content: space-between;
+        flex-flow: nowrap;
+        padding: 0px 30px;
+    }
+    .cabecalho ul {
+        grid-template-columns: repeat(12, 50px);
+        gap: 10px;
+    }
+    .conteudo {
+        height: calc(100vh - var(--alturaMenu));
+    }
+}
