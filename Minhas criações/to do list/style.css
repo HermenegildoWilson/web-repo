@@ -214,14 +214,15 @@ main {
 */
 #pendente .tarefa {
     background-color: var(--corTarefaPendente);
+    color: var(--corTextoPendente);
 }
 #em-execucao .tarefa {
     background-color: var(--corTarefaExecucao);
-    color: black;
+    color: var(--corTextoExecucao);
 }
 #concluido .tarefa {
     background-color: var(--corTarefaConcluido);
-    color:black;
+    color: var(--corTextoConcluido);
 }
 
 /*
