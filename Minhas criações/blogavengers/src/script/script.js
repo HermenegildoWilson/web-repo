@@ -1,80 +1,29 @@
-const imagens_Grupo = document.querySelectorAll('.div-img img')
-const btn_close_modal = document.querySelector('.close')
-const modal = document.querySelector('#modal')
-const conteudo_modal = document.querySelector('.conteudo-modal')
-let imgAtiva = ''
+const fotos_heroi = document.querySelectorAll('.heroi')
+const total_fotos = fotos_heroi.length
 
-imagens_Grupo.forEach(img => {
-    img.onclick = () => {
-        modal.style.opacity = 1
-        modal.style.scale = 1
-        imgAtiva = img.getAttribute('src')
-        conteudo_modal.setAttribute('src', imgAtiva)
-    }
-})
+const fundo_personagem = document.querySelector('#personagens')
 
+let atual = 0
+let anterior = total_fotos-1
 
-btn_close_modal.onclick = () => {
-    modal.style.opacity = 0
-    modal.style.scale = 0
-}
+fotos_heroi[atual].classList.add('heroi-atual')
 
-const itensMenu = document.querySelectorAll('ul a')
-const seccoes = document.querySelectorAll('.seccao')
-let seccaoAtual = ''
-let itemAtual = ''
-
-function monitorScrol() {
-    alturaTela = window.innerHeight/2
-    seccoes.forEach(seccao => {
-        topSeccao = seccao.getBoundingClientRect().top
+function apresentar() {
+    if (atual >= 0 && atual < total_fotos) {
+        fotos_heroi[anterior].classList.remove('heroi-atual')
         
-        if (topSeccao <= alturaTela) {
-            seccaoAtual = seccao.getAttribute('id')
+        fotos_heroi[atual].classList.add('heroi-atual')
+
+        fundo_personagem.style.backgroundImage = `url(src/img/personagens/perso/${atual+1}.jpg)`
+
+        atual += 1
+        if (atual != 0) {
+            anterior = atual - 1
+        }else {
+            anterior = 10
         }
-    })
-    itensMenu.forEach(item => {
-        itemAtual = item.getAttribute('name')
-        item.classList.remove('ativo')
-        if (itemAtual == seccaoAtual) {
-            item.classList.toggle('ativo')
-        }
-    })
-}
-window.addEventListener('scroll', monitorScrol)
-
-
-const slides = document.querySelectorAll('.personagem')
-const btn_prev = document.querySelector('#prev')
-const btn_next = document.querySelector('#next')
-let slideAtual = 0
-const numeroSlides = slides.length
-const btns_control = document.querySelectorAll('.btn')
-
-btn_next.onclick = () => {
-    slides[slideAtual].classList.remove('slideAtivo')
-    btns_control[slideAtual].classList.remove('btn-ativo')
-    slideAtual += 1
-    if (slideAtual >= 0 && slideAtual < numeroSlides) {
-        slides[slideAtual].classList.toggle('slideAtivo')
-        btns_control[slideAtual].classList.toggle('btn-ativo')
-    } else {
-        slideAtual = 0
-        slides[slideAtual].classList.toggle('slideAtivo')
-        btns_control[slideAtual].classList.toggle('btn-ativo')
+    }else {
+        atual = 0
     }
 }
-
-btn_prev.onclick = () => {
-    slides[slideAtual].classList.remove('slideAtivo')
-    btns_control[slideAtual].classList.remove('btn-ativo')
-    slideAtual -= 1
-    if (slideAtual >= 0 && slideAtual < numeroSlides) {
-        slides[slideAtual].classList.toggle('slideAtivo')
-        btns_control[slideAtual].classList.toggle('btn-ativo')
-    } else {
-        slideAtual = numeroSlides-1
-        slides[slideAtual].classList.toggle('slideAtivo')
-        btns_control[slideAtual].classList.toggle('btn-ativo')
-    }
-}
+setInterval(apresentar, 5000)
