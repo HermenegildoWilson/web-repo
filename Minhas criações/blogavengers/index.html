@@ -1,222 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-pt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Avangers</title>
-    <link rel="stylesheet" href="src/estilos/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider Avengers</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header id="cabecalho">
-        <i id="logo"><img src="src/img/logo-avengers.png" alt="avengers-logo"></i>
-        <nav>
-            <ul id="menu">
-                <li><a name="inicio" href="#inicio">Inicio</a></li>
-                <li><a name="galeria" href="#galeria">Galeria</a></li>
-                <li><a name="personagens" href="#personagens">Personagens</a></li>
-                <li><a name="filmes" href="#filmes">Filmes</a></li>
-                <li><a name="curiosidades" href="#curiosidades">Curiosidades</a></li>
-            </ul>
-        </nav>
+    <header>
+        <h1>Blog Avengers</h1>
+        <button class="btn-menu">
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span>
+        </button>
+        <ul>
+            <li>Herois</li>
+            <li name="1" class="nome-heroi">Thor</li>
+            <li name="2" class="nome-heroi">Homem Aranha</li>
+            <li name="3" class="nome-heroi">Iron Man</li>
+            <li name="4" class="nome-heroi">Pantera Negra</li>
+            <li name="5" class="nome-heroi">Captain Amer</li>
+            <li name="6" class="nome-heroi">Hulk</li>
+            <li name="7" class="nome-heroi">Dr. Estranho</li>
+            <li name="8" class="nome-heroi">Gavião Arque</li>
+            <li name="9" class="nome-heroi">Viuva Negra</li>
+            <li name="10" class="nome-heroi">Bruxa Scarlet</li>
+        </ul>
     </header>
-    <main class="conteudo">
-
-        <section class="seccao" id="galeria">
-            <h2 class="title">Galeria</h2>
-            <div class="conteiner-imagens-grupo">
-                <div class="img-grupo">
-                    <img src="src/img/grupo/avengers-01.jpg" alt="Imagem em grupo avengers-01">
-                </div>
-
-                <div class="img-grupo">
-                    <img src="src/img/grupo/avengers-02.jpg" alt="Imagem em grupo avengers-02">
-                </div>
-
-                <div class="img-grupo">
-                    <img src="src/img/grupo/avengers-03.jpg" alt="Imagem em grupo avengers-03">
-                </div>
-
-                <div class="img-grupo">
-                    <img src="src/img/grupo/avengers-04.jpg" alt="Imagem em grupo avengers-04">
-                </div>
-
-                <div class="img-grupo">
-                    <img src="src/img/grupo/avengers-05.jpg" alt="Imagem em grupo avengers-05">
-                </div>
-
-                <div class="img-grupo">
-                    <img src="src/img/grupo/avengers-06.jpg" alt="Imagem em grupo avengers-06">
-                </div>
-
-                <div class="img-grupo">
-                    <img src="src/img/grupo/avengers-07.jpg" alt="Imagem em grupo avengers-07">
-                </div>
-
-                <div class="img-grupo">
-                    <img src="src/img/grupo/avengers-08.jpg" alt="Imagem em grupo avengers-08">
-                </div>
+    <main class="conteiner">
+        <section class="imagem">
+            <img src="perso/1.jpg">
+            <div class="descricao">
+                <h2>Thor</h2>
+                <button name="1" class="sobre-heroi">Sobre</button>
+            </div>
+            <div class="historia">
+                <h3>Habilidades:</h3>
+                <ul>
+                    <li>Força sobre-humana, resistência e longevidade.</li>
+                    <li>Capaz de controlar o relâmpago e invocar o martelo Mjolnir, que lhe dá poderes mágicos.</li>
+                    <li>Mestre em combate e possui resistência a danos.</li>
+                </ul>
+                <h3>Fraquezas:</h3>
+                <ul>
+                    <li>A perda de Mjolnir (embora tenha obtido o machado Stormbreaker).</li>
+                    <li>Às vezes, suas emoções (como a raiva ou a autocrítica) podem interferir em suas decisões.</li>
+                    <li>Sua arrogância inicial e excesso de confiança.</li>
+                </ul>
             </div>
         </section>
-
-        <section class="seccao" id="personagens">
-            <h2 class="title">Personagens</h2>
-            <img src="" id="foto">
-            <div class="conteiner-imagens-herois">
-                <div class="heroi">
-                    <div class="foto-heroi">
-                        <img src="src/img/personagens/Thor5.jpg" alt="personagens-Thor">
-                    </div>
-                    <aside class="descricao-autor">
-                        <h3>Thor</h3>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam adipisci pariatur harum sint
-                            dolores, saepe eveniet facere quo perspiciatis inventore. Nam, consectetur ipsa ut nulla
-                            sapiente incidunt deleniti aliquid quae!
-                        </p>
-                    </aside>
-                </div>
-
-                <div class="heroi">
-                    <div class="foto-heroi">
-                        <img src="src/img/personagens/Homem_aranha1.jpg" alt="personagens-Homem_aranha">
-                    </div>
-                    <aside class="descricao-autor">
-                        <h3>Homem Aranha</h3>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam adipisci pariatur harum sint
-                            dolores, saepe eveniet facere quo perspiciatis inventore. Nam, consectetur ipsa ut nulla
-                            sapiente incidunt deleniti aliquid quae!
-                        </p>
-                    </aside>
-                </div>
-
-                <div class="heroi">
-                    <div class="foto-heroi">
-                        <img src="src/img/personagens/Iron_Man1.jpg" alt="personagens-Iron_Man">
-                    </div>
-                    <aside class="descricao-autor">
-                        <h3>Iron Man</h3>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam adipisci pariatur harum sint
-                            dolores, saepe eveniet facere quo perspiciatis inventore. Nam, consectetur ipsa ut nulla
-                            sapiente incidunt deleniti aliquid quae!
-                        </p>
-                    </aside>
-                </div>
-
-                <div class="heroi">
-                    <div class="foto-heroi">
-                        <img src="src/img/personagens/Pantera_negra2.jpg" alt="personagens-pantera_negra">
-                    </div>
-                    <aside class="descricao-autor">
-                        <h3>Pantera Negra</h3>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam adipisci pariatur harum sint
-                            dolores, saepe eveniet facere quo perspiciatis inventore. Nam, consectetur ipsa ut nulla
-                            sapiente incidunt deleniti aliquid quae!
-                        </p>
-                    </aside>
-                </div>
-
-                <div class="heroi">
-                    <div class="foto-heroi">
-                        <img src="src/img/personagens/captain_america2.jpg" alt="personagens-captain_america">
-                    </div>
-                    <aside class="descricao-autor">
-                        <h3>Captain America</h3>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam adipisci pariatur harum sint
-                            dolores, saepe eveniet facere quo perspiciatis inventore. Nam, consectetur ipsa ut nulla
-                            sapiente incidunt deleniti aliquid quae!
-                        </p>
-                    </aside>
-                </div>
-
-                <div class="heroi">
-                    <div class="foto-heroi">
-                        <img src="src/img/personagens/Hulh1.jpg" alt="personagens-Hulh">
-                    </div>
-                    <aside class="descricao-autor">
-                        <h3>Hulh</h3>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam adipisci pariatur harum sint
-                            dolores, saepe eveniet facere quo perspiciatis inventore. Nam, consectetur ipsa ut nulla
-                            sapiente incidunt deleniti aliquid quae!
-                        </p>
-                    </aside>
-                </div>
-
-                <div class="heroi">
-                    <div class="foto-heroi">
-                        <img src="src/img/personagens/Dr_Estranho4.jpg" alt="personagens-Dr_Estranho">
-                    </div>
-                    <aside class="descricao-autor">
-                        <h3>Dr. Estranho</h3>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam adipisci pariatur harum sint
-                            dolores, saepe eveniet facere quo perspiciatis inventore. Nam, consectetur ipsa ut nulla
-                            sapiente incidunt deleniti aliquid quae!
-                        </p>
-                    </aside>
-                </div>
-
-                <div class="heroi">
-                    <div class="foto-heroi">
-                        <img src="src/img/personagens/Gavião_Arqueiro1.jpg" alt="personagens-Gavião_Arqueiro">
-                    </div>
-                    <aside class="descricao-autor">
-                        <h3>Gavião Arqueiro</h3>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam adipisci pariatur harum sint
-                            dolores, saepe eveniet facere quo perspiciatis inventore. Nam, consectetur ipsa ut nulla
-                            sapiente incidunt deleniti aliquid quae!
-                        </p>
-                    </aside>
-                </div>
-
-                <div class="heroi">
-                    <div class="foto-heroi">
-                        <img src="src/img/personagens/Viuva_negra3.jpg" alt="personagens-Viuva_negra">
-                    </div>
-                    <aside class="descricao-autor">
-                        <h3>Viuva Negra</h3>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam adipisci pariatur harum sint
-                            dolores, saepe eveniet facere quo perspiciatis inventore. Nam, consectetur ipsa ut nulla
-                            sapiente incidunt deleniti aliquid quae!
-                        </p>
-                    </aside>
-                </div>
-
-                <div class="heroi">
-                    <div class="foto-heroi">
-                        <img src="src/img/personagens/Bruxa_Scarlet2.jpg" alt="personagens-Bruxa_Scarlet">
-                    </div>
-                    <aside class="descricao-autor">
-                        <h3>Bruxa Scarlet</h3>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam adipisci pariatur harum sint
-                            dolores, saepe eveniet facere quo perspiciatis inventore. Nam, consectetur ipsa ut nulla
-                            sapiente incidunt deleniti aliquid quae!
-                        </p>
-                    </aside>
-                </div>
+        <section class="imagem">
+            <img src="perso/2.jpg">
+            <div class="descricao">
+                <h2>Homem Aranha</h2>
+                <button name="2" class="sobre-heroi">Sobre</button>
+            </div>
+            <div class="historia">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero non hic quas quibusdam ex, maiores iste
+                pariatur quaerat possimus, ullam deserunt aut. Similique ullam odio illum non doloremque. Perspiciatis,
+                dignissimos!
             </div>
         </section>
-
-        <section class="seccao" id="filmes">
-            <h2 class="title">filmes</h2>
-            <div class="conteiner-imagens-filmes">
-                <div class="filme"></div>
-                <aside class="descricao-filme"></aside>
+        <section class="imagem">
+            <img src="perso/3.jpg">
+            <div class="descricao">
+                <h2>Iron Man</h2>
+                <button name="3" class="sobre-heroi">Sobre</button>
+            </div>
+            <div class="historia">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero non hic quas quibusdam ex, maiores iste
+                pariatur quaerat possimus, ullam deserunt aut. Similique ullam odio illum non doloremque. Perspiciatis,
+                dignissimos!
+            </div>
+        </section>
+        <section class="imagem">
+            <img src="perso/4.jpg">
+            <div class="descricao">
+                <h2>Pantera Negra</h2>
+                <button name="4" class="sobre-heroi">Sobre</button>
+            </div>
+            <div class="historia">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero non hic quas quibusdam ex, maiores iste
+                pariatur quaerat possimus, ullam deserunt aut. Similique ullam odio illum non doloremque. Perspiciatis,
+                dignissimos!
+            </div>
+        </section>
+        <section class="imagem">
+            <img src="perso/5.jpg">
+            <div class="descricao">
+                <h2>Captain America</h2>
+                <button name="5" class="sobre-heroi">Sobre</button>
+            </div>
+            <div class="historia">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero non hic quas quibusdam ex, maiores iste
+                pariatur quaerat possimus, ullam deserunt aut. Similique ullam odio illum non doloremque. Perspiciatis,
+                dignissimos!
+            </div>
+        </section>
+        <section class="imagem">
+            <img src="perso/6.jpg">
+            <div class="descricao">
+                <h2>Hulk</h2>
+                <button name="6" class="sobre-heroi">Sobre</button>
+            </div>
+            <div class="historia">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero non hic quas quibusdam ex, maiores iste
+                pariatur quaerat possimus, ullam deserunt aut. Similique ullam odio illum non doloremque. Perspiciatis,
+                dignissimos!
+            </div>
+        </section>
+        <section class="imagem">
+            <img src="perso/7.jpg">
+            <div class="descricao">
+                <h2>Dr. Estranho</h2>
+                <button name="7" class="sobre-heroi">Sobre</button>
+            </div>
+            <div class="historia">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero non hic quas quibusdam ex, maiores iste
+                pariatur quaerat possimus, ullam deserunt aut. Similique ullam odio illum non doloremque. Perspiciatis,
+                dignissimos!
+            </div>
+        </section>
+        <section class="imagem">
+            <img src="perso/8.jpg">
+            <div class="descricao">
+                <h2>Gavião Arqueiro</h2>
+                <button name="8" class="sobre-heroi">Sobre</button>
+            </div>
+            <div class="historia">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero non hic quas quibusdam ex, maiores iste
+                pariatur quaerat possimus, ullam deserunt aut. Similique ullam odio illum non doloremque. Perspiciatis,
+                dignissimos!
+            </div>
+        </section>
+        <section class="imagem">
+            <img src="perso/9.jpg">
+            <div class="descricao">
+                <h2>Viuva Negra</h2>
+                <button name="9" class="sobre-heroi">Sobre</button>
+            </div>
+            <div class="historia">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero non hic quas quibusdam ex, maiores iste
+                pariatur quaerat possimus, ullam deserunt aut. Similique ullam odio illum non doloremque. Perspiciatis,
+                dignissimos!
+            </div>
+        </section>
+        <section class="imagem">
+            <img src="perso/10.jpg">
+            <div class="descricao">
+                <h2>Bruxa Scarlet</h2>
+                <button name="10" class="sobre-heroi">Sobre</button>
+            </div>
+            <div class="historia">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero non hic quas quibusdam ex, maiores iste
+                pariatur quaerat possimus, ullam deserunt aut. Similique ullam odio illum non doloremque. Perspiciatis,
+                dignissimos!
             </div>
         </section>
     </main>
 
-
-    <script src="src/script/script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
