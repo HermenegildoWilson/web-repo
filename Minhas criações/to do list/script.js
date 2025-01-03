@@ -7,54 +7,20 @@ inicializar()
 window.addEventListener('mousemove', inicializar)
 
 function inicializar() {
-    //Variavel que armazena todos os paineis por onde podemos soltar as tarefas
-    const paineisDeTarefa = document.querySelectorAll('.painel-tarefa')
-
-    //Variavel para armazenar as tarefas
-    const tarefas = document.querySelectorAll('.tarefa')
-
     //Variavel para abrir o formulário de adicionar tarefa
     const btn_plus = document.querySelectorAll('.btn-plus')
 
     //Tela de formulário para adicionar tarefa
     const tela_add_tarefa = document.querySelector('.tela-add-tarefa')
 
-    //Botão para adicionar tarefa
     const btn_add_taref = document.querySelector('#btnSubmit')
-
     const btn_close_tela = document.querySelector('.close-tela')
-
     const botoes_eliminar_tarefa = document.querySelectorAll('.btn-eliminar-tarefa')
     const botoes_redimensionar_tarefa = document.querySelectorAll('.btn-redimensionar-tarefa')
 
     //Pegamos os dados do formulário
     let nome_tarefa = document.querySelector('#nome-tarefa')
     let descricao_tarefa = document.querySelector('#descricao-tarefa')
-
-    tarefas.forEach(tarefa => {
-        //Função executada quando um item for arrastado
-        tarefa.ondragstart = () => {
-            tarefa.classList.toggle('tarefaArrastavel')
-            tarefaArrastada = tarefa
-        }
-        //Função executada quando um item for solto
-        tarefa.ondragend = () => {
-            tarefa.classList.remove('tarefaArrastavel')
-        }
-    })
-
-    paineisDeTarefa.forEach(painel => {
-        //Função executada quando o item arrastado estiver por cima de um dos paineis
-        painel.ondragover = (painelEvent) => {
-            //Para que o painel possa receber um item
-            painelEvent.preventDefault()
-            painel.appendChild(tarefaArrastada)
-        }
-        //Função executada quando um item for solto num dos paineis, adiciona o item no final do painel
-        painel.ondrop = () => {
-            painel.appendChild(tarefaArrastada)
-        }
-    })
 
     btn_plus.forEach(btn => {
         //Função executada quando o botão adicionar tarefa for clicado
@@ -103,18 +69,19 @@ function inicializar() {
         }
     }
 
+    //FECHAR A TELA DE ADICIONAR TAREFA
     btn_close_tela.onclick = () => {
         tela_add_tarefa.classList.remove('tela-tarefa-visivel')
     }
 
+    //BOTÃO DE AÇÃO REMOVER TAREFA
     botoes_eliminar_tarefa.forEach(btn => {
         btn.onclick = () => {
             elemento = document.getElementById(btn.getAttribute('name'))
-
             elemento.remove()
         }
     })
-
+    //REPOSICIONAR UMA TAREFA
     botoes_redimensionar_tarefa.forEach(btn => {
         btn.onclick = () => {
             receberPosicao()
@@ -129,6 +96,38 @@ function inicializar() {
                     receberPosicao()
                 }
             }
+        }
+    })
+
+    //CONFIGURAÇÃO DAS TAREFAS PARA POSICIONAR COM O DRAG E DROP
+
+    //Variavel que armazena todos os paineis por onde podemos soltar as tarefas
+    const paineisDeTarefa = document.querySelectorAll('.painel-tarefa')
+
+    //Variavel para armazenar as tarefas
+    const tarefas = document.querySelectorAll('.tarefa')
+    tarefas.forEach(tarefa => {
+        //Quando uma tarefa for arrastado, adicionamos a classe arrastável
+        tarefa.ondragstart = () => {
+            tarefa.classList.toggle('tarefaArrastavel')
+            tarefaArrastada = tarefa
+        }
+        //Quando uma tarefa for solata, removemos a classe arrastável
+        tarefa.ondragend = () => {
+            tarefa.classList.remove('tarefaArrastavel')
+        }
+    })
+
+    paineisDeTarefa.forEach(painel => {
+        //Função executada quando o item arrastado estiver por cima de um dos paineis
+        painel.ondragover = (painelEvent) => {
+            //Para que o painel possa receber um item
+            painelEvent.preventDefault()
+            painel.appendChild(tarefaArrastada)
+        }
+        //Função executada quando um item for solto num dos paineis, adiciona o item no final do painel
+        painel.ondrop = () => {
+            painel.appendChild(tarefaArrastada)
         }
     })
 }

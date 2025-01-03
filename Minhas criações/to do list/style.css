@@ -37,7 +37,7 @@
 }
 
 /*
-    -> RESET DE TOCAS AS CAIXAS
+    -> RESET DE TOCASAS CAIXAS
 */
 *{
     padding: 0px;
@@ -105,6 +105,7 @@ header {
 #rodape p {
     margin-top: 30px;
 }
+
 /*
     -> CONFIGURAÇÃO DO PAINEL ONDE ESTÃO AS AREAS DE TAREFAS
 */
@@ -132,8 +133,10 @@ header {
     border: 1px dashed var(--corCinza1);
     padding: 2px;
 }
+
+
 /*
-    -> CONFIGURAÇÃO GERAL DO CABEÇALHO DA ÁREA
+    -> CONFIGURAÇÃO GERAL DO CABEÇALHO DO PAINEL DE TAREFAS
 */
 .painel-cabecalho {
     display: flex;
@@ -145,9 +148,8 @@ header {
 
     margin-bottom: 25px;
 }
-
 /*
-    -> CONFIGURAÇÃO DE CADA CABEÇALHO DE ACORDO AO NIVEL
+    -> CONFIGURAÇÃO DE CADA CABEÇALHO DO PAINEL DE TAREFA DE ACORDO AO NIVEL DE EXECUÇÃO
 */
 #pendente .painel-cabecalho{
     background-color: var(--corPendente);
@@ -179,8 +181,11 @@ header {
     background: var(--corCinza3);
     display: inline-block;
     height: 2px;
-    width: 40%;
+    width: 44%;
     border-radius: 10px;
+}
+.linha:nth-child(1){
+    transform: translateY(2px);
 }
 .linha:nth-child(2) {
     transform: rotate(90deg);
@@ -210,6 +215,24 @@ header {
     grid-template-columns: 1fr .1fr;
     justify-content: space-between;
 }
+/*
+    -> CONFIGURAÇÃO DAS TAREFAS DE ACORDO AO PAINEL EM QUE SE ENCONTRAM
+*/
+#pendente .tarefa {
+    background-color: var(--corTarefaPendente);
+    color: var(--corTextoPendente);
+}
+#em-execucao .tarefa {
+    background-color: var(--corTarefaExecucao);
+    color: var(--corTextoExecucao);
+}
+#concluido .tarefa {
+    background-color: var(--corTarefaConcluido);
+    color: var(--corTextoConcluido);
+}
+/*
+    Componentes dentro da caixa de tarefa
+*/
 .tarefa-descricao p{
     margin-left: 5px;
 }
@@ -230,29 +253,13 @@ header {
     background: url(icone-setting.png) center center;
     background-size: contain;
 }
-
-/*
-    -> CONFIGURAÇÃO DAS TAREFAS DE ACORDO AO PAINEL EM QUE SE ENCONTRAM
-*/
-#pendente .tarefa {
-    background-color: var(--corTarefaPendente);
-    color: var(--corTextoPendente);
-}
-#em-execucao .tarefa {
-    background-color: var(--corTarefaExecucao);
-    color: var(--corTextoExecucao);
-}
-#concluido .tarefa {
-    background-color: var(--corTarefaConcluido);
-    color: var(--corTextoConcluido);
-}
-
 /*
     -> CONFIGURAÇÃO DE QUANDO UMA TAREFA FOR ARRASTADA
 */
 .tarefaArrastavel {
     opacity: .4;
 }
+
 
 /*
     -> CONFIGURAÇÃO DA TELA EXIBIDA QUANDO DESEJAMOS ADICIONAR UMA NOVA TAREFA
@@ -278,14 +285,13 @@ header {
 }
 
 /*
-    -> CONFIGURAÇÃO DA TELA EXIBIDA QUANDO DESEJAMOS ADICIONAR UMA NOVA TAREFA VISIVEL
+    -> CONFIGURAÇÃO DA TELA EXIBIDA QUANDO DESEJAMOS ADICIONAR UMA NOVA TAREFA
 */
 .tela-tarefa-visivel {
     transform: translateY(0);
     opacity: 1;
     z-index: 1;
 }
-
 .close-tela {
     height: 40px;
     width: 40px;
@@ -310,8 +316,9 @@ header {
     transform: rotate(45deg);
 }
 
+
 /*
-    -> CONFIGURAÇÃO DA FORMULÁRIO DE ADICIONAR UMA TAREFA
+    -> CONFIGURAÇÃO DO FORMULÁRIO DE ADICIONAR UMA TAREFA
 */
 .formularioAddTarefa {
     display: flex;
@@ -323,7 +330,6 @@ header {
     padding: 25px;
     border-radius: 10px;
 }
-
 label {
     text-indent: 15px;
 }
@@ -337,12 +343,10 @@ input, textarea, #btnSubmit {
     font-size: 1em;
     border-radius: 8px;
 }
-
 input:focus, textarea:focus {
     border-bottom: 2px solid var(--corPendente);
     box-shadow: 1px 3px 1px var(--corTarefaPendente);
 }
-
 #btnSubmit {
     background-color: var(--corExecucao);
     margin-top: 16px;
