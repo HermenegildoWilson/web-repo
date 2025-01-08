@@ -1,0 +1,309 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'lato';
+    src: url(../../publico/Lato/Lato-Regular.ttf);
+}
+
+:root {
+    --cor01: #9fbef2;
+    --cor010: #9fbef285;
+    
+    --cor02: #dea8da;
+    --cor020: #dea8da85;
+
+    --cor03: #ffb098;
+    --cor04: #bef29f;
+    --cor05: #325e7e;
+    
+    --corC: #efefef;
+
+    --corC0: #454545; /* UTILIZADO NA COR DO TEXTO */
+    
+    --corC1: #adadad4f; /* UTILIZADO NOS FUNDOS {formulário e painel de tarefas} */
+
+    --corC2: #cecece57; /* UTILIZADO NO FUNDO {Cabeçalho, tarefa, bordas} */
+
+    --fontLato: 'lato';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+    font-family: var(--fontLato);
+    color: var(--corC0);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    background: radial-gradient(at 31.23193213528698% 91.12910731030036%, #9fbef2 0%, #9fbef200 100%), radial-gradient(at 90.07472435370208% 83.49965436437668%, #dea8da 0%, #dea8da00 100%), radial-gradient(at 6.693996062499574% 18.980240421903215%, #ffb098 0%, #ffb09800 100%), radial-gradient(at 35.22724589642204% 26.914362777274647%, #bef29f 0%, #bef29f00 100%), radial-gradient(at 72.04283600567946% 70.69691430161984%, #9fbef2 0%, #9fbef200 100%), radial-gradient(at 13.197469869699773% 64.0337104091159%, #dea8da 0%, #dea8da00 100%) no-repeat;
+    background-size: cover;
+}
+
+.cabecalho{
+    height: 15vh;
+    background: var(--corC2);
+}
+.cabecalho{
+    padding: 0 20px;
+    
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-size: 1.8em;
+}
+
+.conteudo {
+    height: 85vh;
+    padding: 0 20px;
+
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.descricao {
+    max-width: 70%;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+    /* Botão de ação */
+.botao-acao {
+    padding: 12px;
+    font-size: 1em;
+
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+
+    background-color: var(--cor04);
+    box-shadow: 0px 0px 8px 1px var(--cor01);
+
+    animation: animarBotao .5s infinite linear alternate;
+    transition: .4s;
+}
+.botao-acao:hover {
+    animation: animarBotao;
+    scale: 1.02;
+    transform: translateY(-3px)
+}
+@keyframes animarBotao {
+    0% {transform: translateY(0);}
+    100%{transform: translateY(-3px);}
+}
+
+
+
+    /* FORMULÁRIO */
+.formulario {
+    background: var(--corC1);
+    margin-top: 20px;
+
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
+    justify-content: center;
+
+    padding: 10px 10px 20px 10px;
+    min-width: 60%;
+    border-radius: 10px;
+    border: 1px solid var(--corC2);
+}
+.campo{
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding: 10px;
+}
+.campo input, textarea {
+    flex: auto;
+
+    border-radius: 6px;
+    border: 4px solid transparent;
+    outline: none;
+    border: none;
+    font-size: .8em;
+    padding: 6px 12px;
+    
+    transition: all .4s;
+}
+.campo input:focus, textarea:focus{
+    border-bottom: 1px solid var(--cor01);
+    box-shadow: 1px 3px 1px var(--cor01);
+}
+#botao-cadastrar, #botao-entrar, #botao-adicionar {
+    width: 50%;
+    padding: 7px;
+    font-size: .8em;
+    animation: animarBotao;
+
+    align-self: center;
+}
+
+
+
+    /* PÁGINA PRINCIPAL */
+
+    /* CAIXA ONDE FICA O PAINEl DE TAREFA E O TÍTULO  */
+.painel-tarefas {
+    background: var(--corC1);
+    min-height: 30vh;
+    width: 96vw;
+
+    display: grid;
+    gap: 10px;
+
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--corC2);
+}
+
+h3 {
+    text-align: center;
+}
+
+    /* ESTILIZAÇÃO DOS PAINEIS DE TAREFAS */
+.painel {
+    border-radius: 10px;
+    width: 60%;
+
+    margin: 12px auto;
+    overflow: hidden;
+
+    display: flex;
+    gap: 8px;
+    flex-flow: column;
+}
+
+    /* ESTILIZAÇÃO DO CABEÇALHO DO PAINEL */
+.cabecalho-painel {
+    background: var(--cor01);
+    width: 100%;
+    padding: 10px 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    /* ESTILIZAÇÃO DO BOTÃO DE ADICIONAR TAREFA */
+.botao-add-tarefa, .close-tela {
+    background-color: var(--corC1);
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.linha {
+    background: var(--corC0);
+    display: inline-block;
+    height: 2px;
+    width: 44%;
+    border-radius: 10px;
+}
+.linha:nth-child(1){
+    transform: translateY(2px);
+}
+.linha:nth-child(2) {
+    transform: rotate(90deg);
+}
+
+    /* ESTILIZAÇÃO CONTEINER ONDE FICARÃO AS TAREFAS */
+.tarefas {
+    background: var(--corC2);
+    padding: 6px 10px;
+    border-radius: 0px 0px 10px 10px;
+
+    display: grid;
+    gap: 6px;
+}
+.tarefa {
+    background: var(--cor010);
+    border: 1px solid var(--corC2);
+    border-radius: 8px;
+    padding: 8px 12px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+    /* PAINEL FEMININO */
+.painel-feminino .cabecalho-painel{
+    background: var(--cor02);
+}
+.painel-feminino .tarefa {
+    background: var(--cor020);
+}
+
+
+    /* TELA DE ADICIONAR TAREFA */
+.tela-add-tarefa{
+    background: #00000070;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+
+    transition: .8s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-flow: column;
+    gap: 10px;
+
+    transform: translateY(-100vh);
+    opacity: 0.6;
+    z-index: -1;
+}
+.tela-add-tarefa label{
+    color: whitesmoke;
+    font-weight: 550;
+    font-size: 1.1em;
+}
+
+    /*QUNADO A TELA DE ADICIONAR TAREFA ESTIVER VISIVEL */
+.tela-tarefa-visivel {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 1;
+}
+    /* BOTÃO CANCELAR ADICIONAR */
+.btn-linha {
+    background: #ff0000;
+    display: inline-block;
+    height: 1px;
+    width: 90%;
+    border-radius: 10px;
+    transform-origin: center;
+}
+.btn-linha:nth-child(1) {
+    transform: rotate(-45deg);
+}
+.btn-linha:nth-child(2) {
+    transform: rotate(45deg);
+}

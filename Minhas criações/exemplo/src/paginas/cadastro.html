@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+    <link rel="stylesheet" href="../styles/estilos.css">
+    <style>
+        body {height: 100vh;}
+    </style>
+</head>
+<body>
+
+    <!-- Página do formulário de cadastro -->
+    <main class="conteudo" id="conteudo-pagina-cadastro">
+        
+        <h2>Cadastre-se para utilizar a App</h2>
+        <!-- Enviamos os dados do formulário para a página principal -->
+        
+        <form action="paginaDeAcao.html" method="get" class="formulario" id="formulario-cadastro">
+            <p class="campo">
+                <label for="campoEmail">Emai: </label>
+                <input type="email" required name="email" id="campoEmail">
+            </p>
+
+            <p class="campo">
+                <label for="campoNome">Nome: </label>
+                <input type="text" required name="nome" id="campoNome">
+            </p>
+
+            <p class="campo">
+                <label>Sexo: </label>
+
+                <span>
+                    <input type="radio" required value="Masculino" name="sexo" id="campoSexoM">
+                    <label for="campoSexoM">Masculino</label>
+                </span>
+
+                <span>
+                    <input type="radio" required value="Feminino" name="sexo" id="campoSexoF">
+                    <label for="campoSexoF">Feminino</label>
+                </span>
+            </p>
+
+            <p class="campo">
+                <label for="campoSenha">Senha: </label>
+                <input type="password" required minlength="6" name="senha" id="campoSenha">
+            </p>
+
+            <input class="botao-acao" id="botao-cadastrar" type="submit" value="Cadastrar">
+        </form>
+    </main>
+</body>
+</html>

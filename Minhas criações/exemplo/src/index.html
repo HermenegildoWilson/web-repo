@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="styles/estilos.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>To do list</h1>
+    </header>
+
+    <main class="conteudo" id="conteudo-pagina-home">
+        <h2>Organize suas tarefas</h2>
+        <section class="descricao">
+            <p>
+                Organize suas actividades para ter controle sobre seu dia, reduzir o stress e aumentar a produtividade!
+            </p>
+        </section>
+        <button class="botao-acao" id="entrar">
+            <a href="paginas/cadastro.html" target="_self">Cadastrar-se</a>
+        </button>
+    </main>
+
+    <script>
+        //Link do botão de ação principal
+        const botao = document.querySelector('#entrar > a')
+
+        //Caso já exista um cadastro alteramos as informações do link de forma que ele nos direcione para a página de login
+        if ((localStorage.getItem('sexo') != 'null') &&(localStorage.getItem('sexo'))) {
+            botao.innerHTML = 'Fazer login'
+            botao.setAttribute('href', 'paginas/login.html')
+        }
+    </script>
+</body>
+</html>

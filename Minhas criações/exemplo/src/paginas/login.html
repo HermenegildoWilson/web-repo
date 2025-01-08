@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="../styles/estilos.css">
+    <style>
+        body {height: 100vh;}
+    </style>
+</head>
+<body>
+
+    <!-- Página do formulário de login -->
+    <main class="conteudo" id="conteudo-pagina-login">
+        <h2>Tela de Login</h2>
+        <form method="get" class="formulario">
+            <p class="campo">
+                <label for="email">Emai: </label>
+                <input type="email" required name="email" id="email">
+            </p>
+
+            <p class="campo">
+                <label for="senha">Senha: </label>
+                <input type="password" required name="senha" id="senha">
+            </p>
+
+            <input class="botao-acao" id="botao-entrar" type="submit" value="Login">
+        </form>
+    </main>
+
+    <script>
+        // Botão de ação, login
+        const botao = document.querySelector('#botao-entrar')
+
+        //Quando o botão for clicado validamos o acesso
+        botao.onclick = (event) => {
+            const email = document.querySelector('#email').value
+            const senha = document.querySelector('#senha').value
+
+            //Alteramos o evento padrão do botão submit
+            event.preventDefault()
+
+            //Se os dados que o usuario fornecer corresponderem aos dados existetes validamos o acesso
+            if ((email == localStorage.getItem('email')) && (senha == localStorage.getItem('senha'))) {
+                //Abrimos a pagina principal
+                window.open('paginaDeAcao.html','_self')
+            }else {
+                //Caso contrário emitimos uma mensagem de alerta
+                window.alert('Palavra passe ou email incorreto')
+            }
+        }
+    </script>
+</body>
+</html>
